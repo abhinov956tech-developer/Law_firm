@@ -10,14 +10,6 @@ html,body {
 }
 
 
-header {
-    background-color: white;
-    color: white;
-    padding-left: 27% ;
-    padding-top: 20px;
-    display: flex;
-   
-}
 
 #main{
     overflow: auto;
