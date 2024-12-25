@@ -80,6 +80,31 @@ html,body {
     font-weight: 100;
     margin-top: 1vw;
 }
+
+footer {
+    background-color: lightskyblue;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .content {
+    flex: 1;
+  }
+
+  .footer-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
 .menu {
     display: flex;
     justify-content: center;
