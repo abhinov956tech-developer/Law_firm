@@ -15,6 +15,15 @@ document.getElementById('agree-button').addEventListener('click', function() {
     document.getElementById('disclaimer-popup').style.display = 'none';
 });
 
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const formData = new FormData(this);
+  let data = {};
+  formData.forEach((value, key) => (data[key] = value));
+
+  console.log('Form Data Submitted:', data);
+  alert('Your message has been submitted successfully!');
+});
 
 document.addEventListener("DOMContentLoaded", function () {
     const menu = document.getElementById("menu");

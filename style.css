@@ -357,7 +357,7 @@ footer {
 .submit-btn {
     width: 50%;
     padding: 10px;
-    background: #007bff;
+    background: black;
     color: white;
     font-size: 20px;
     font-weight: normal;
@@ -368,5 +368,5 @@ footer {
 }
 
 .submit-btn:hover {
-    background: #0056b3;
+    background: rgb(46, 46, 46);
 }

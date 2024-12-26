@@ -3,136 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .contact-container {
-            width: 90%;
-            max-width: 500px;
-            background: white;
-            padding: 20px 30px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .contact-container h1 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #333;
-        }
-
-        .form-group {
-            margin-bottom: 15px;
-        }
-
-        .form-group label {
-            display: block;
-            font-weight: bold;
-            color: #555;
-            margin-bottom: 5px;
-        }
-
-        .form-group input,
-        .form-group textarea,
-        .form-group select {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 14px;
-            color: #333;
-        }
-
-        .form-group textarea {
-            resize: none;
-            height: 100px;
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus {
-            border-color: #007bff;
-            outline: none;
-        }
-
-        .form-group select {
-            background-color: white;
-        }
-
-        .submit-btn {
-            width: 100%;
-            padding: 10px;
-            background: #007bff;
-            color: white;
-            font-size: 16px;
-            font-weight: bold;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-
-        .submit-btn:hover {
-            background: #0056b3;
-        }
-    </style>
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="contact-container">
-        <h1>Contact Us</h1>
-        <form id="contactForm">
-            <div class="form-group">
-                <label for="firstName">First Name</label>
-                <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+<body class="bg-gray-100">
+    <header class="flex basker justify-center bg-white shadow-md">
+        <nav class="flex justify-center">
+            <ul class="flex text-xl gap-10 p-4 text-slate-950">
+                <li><a href="demo.html">Home</a></li>
+                <li><a href="about.html">Media & Publication</a></li>
+                <li><a href="practices.html">Practices</a></li>
+                <li><a href="partners.html">Partners</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="relative h-[60vh] basker">
+        <img src="https://image.freepik.com/free-photo/old-black-telephone-wooden-desk_62754-727.jpg" class="h-full w-full object-cover" alt="Background Image">
+        <!-- Text Overlay -->
+        <div class="absolute inset-0 flex items-center justify-center z-10 text-white">
+            <div class="flex flex-col items-center justify-center text-center">
+                <h1 class="text-4xl mb-4">GET IN TOUCH WITH US</h1>
+                <div class="flex gap-10">
+                    <div class="relative h-48 w-48 bg-cover bg-center">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-md flex flex-col items-center justify-center p-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10 text-white mb-2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                        </svg>
+                        <div class="text-lg">+9181XXX3789</div>
+                    </div>
+                </div>
+                <div class="relative h-48 w-56 bg-cover bg-center">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-md flex flex-col items-center justify-center p-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 9v.906a2.25 2.25 0 0 1-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 0 0 1.183 1.981l6.478 3.488m8.839 2.51-4.66-2.51m0 0-1.023-.55a2.25 2.25 0 0 0-2.134 0l-1.022.55m0 0-4.661 2.51m16.5 1.615a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V8.844a2.25 2.25 0 0 1 1.183-1.981l7.5-4.039a2.25 2.25 0 0 1 2.134 0l7.5 4.039a2.25 2.25 0 0 1 1.183 1.98V19.5Z" />
+                          </svg>                          
+                        <div class="text-lg">kbora3525@gmail.com</div>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="lastName">Last Name</label>
-                <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
             </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            </div>
-            <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
-            </div>
-            <div class="form-group">
-                <label for="queryType">Query Type</label>
-                <select id="queryType" name="queryType" required>
-                    <option value="" disabled selected>Select a query type</option>
-                    <option value="general">General Inquiry</option>
-                    <option value="support">Support</option>
-                    <option value="feedback">Feedback</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Enter your message"></textarea>
-            </div>
-            <button type="submit" class="submit-btn">Submit</button>
-        </form>
+        </div>
     </div>
-
-    <script>
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const formData = new FormData(this);
-            let data = {};
-            formData.forEach((value, key) => (data[key] = value));
-
-            console.log('Form Data Submitted:', data);
-            alert('Your message has been submitted successfully!');
-        });
-    </script>
+    <div class="p-4 mt-7 flex flex-col basker items-center">
+        <h2 class="font-bold text-4xl mb-4">How Can we Help You?</h2>
+        <div class="w-auto text-2xl mb-7 font-medium">Write to us with your enquiries, questions or request a meeting with a lawyer to discuss your potential case. One of our experts would review the form and revert back shortly.</div>
+        <div class="w-3/5 mt-10 text-xl">
+            <form id="contactForm" class="font-light text-xl">
+                <div class="w-full flex gap-10">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="queryType">Query Type</label>
+                    <select id="queryType" name="queryType" required>
+                        <option value="" disabled selected>Select a query type</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="support">Support</option>
+                        <option value="feedback">Feedback</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+                </div>
+                <div class="flex justify-center">
+                    <button type="submit" class="submit-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div>
+        <footer >
+            <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+            <div class="footer-links">
+              <a href="#about">About Us</a>
+              <a href="#services">Services</a>
+              <a href="#contact">Contact</a>
+            </div>
+            <p>Follow us on:</p>
+            <div class="social-media">
+              <a href="https://www.facebook.com">Facebook</a> | 
+              <a href="https://www.twitter.com">Twitter</a> | 
+              <a href="https://www.instagram.com">Instagram</a>
+            </div>
+          </footer>
+    </div>
 </body>
 </html>
