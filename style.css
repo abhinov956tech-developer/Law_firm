@@ -198,7 +198,14 @@ footer {
     font-size: 16px;
 }
 
+ .basker {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-  
-  
-  
+.basker-italic {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: italic;
+} 
