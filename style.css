@@ -58,7 +58,7 @@ html,body {
 }
 .page4>h2{
     font-weight: 100;
-    margin-top: 1vw;
+    margin-top: 5vw;
 }
 .page5{
     height: 50vh;
@@ -87,7 +87,7 @@ footer {
     text-align: center;
     padding: 1rem;
     width: 100vw;
-    height: 60vh;
+    height: 55vh;
     display: flex;
     flex-direction: column;
     margin: 0;
