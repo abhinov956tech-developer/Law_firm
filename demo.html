@@ -17,7 +17,7 @@
       <li><a href="practices.html">Practices</a></li>
       <li><a href="partners.html">Partners</a></li>
       <li><a href="careers.html">Careers</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html">Contact us</a></li>
       <li><a href="about.html">About us</a></li>
       </ul>
     </nav>
@@ -35,7 +35,7 @@
         </div>
         
         <div class="h-auto basker flex flex-col items-center mt-10 p-4 ">
-            <div class="flex justify-center p-3 text-4xl">Who are We</div>
+            <div class="flex justify-center p-3 text-4xl">WHO ARE WE</div>
             <div class="w-4/5 text-lg">
                 <p class="mt-3 ">Established in 2008, our law firm stands as a premier full-service, multi-disciplinary firm in India, offering a comprehensive range of services including transactional, regulatory, advisory, dispute resolution, and tax assistance. Our main offices are situated in New Delhi and Mumbai, allowing us to serve a diverse range of clients, including local and international companies, banks, financial institutions, funds, promoter groups, and public sector entities.
                     Driven by the goal to enhance client service and provide practical legal advice along with dedicated representation across all sectors, our firm has carved out a distinct identity. We handle complex domestic and international matters with significant depth and expertise.
@@ -50,7 +50,7 @@
         </div>
    
 
-    <div class="h-auto mt-10 flex p-4 flex-col items-center basker">
+    <div class="h-auto mt-4 flex p-4 flex-col items-center basker">
         <div class='text-3xl font-medium p-3 flex justify-center '>ABOUT US</div>
       <div class=" text-xl w-4/5">
         where our experienced Advocates are well-equipped to provide dedicated and diligent legal services to our clients spanning across India especially the North Eastern States of Assam, Arunachal Pradesh, Meghalaya, Manipur, Tripura, Mizoram, and Nagaland. We specialise in various legal areas including corporate law, constitutional law, real estate, and civil &amp; criminal defence. Our Advocates possess a wealth of experience and expertise and are committed to ensuring that our clients receive the best possible outcome in their legal matters. 
@@ -72,10 +72,46 @@
         <p>Meet our esteemed partners who lead our firm with excellence.</p>
     </div>
 
-    <div class=" h-[70vh bg-yellow-400">
-        <h2>Contact Us</h2>
-        <p>Feel free to reach out to us for any legal assistance. You can contact us via email or phone.</p>
-    </div-->
+    <div class="p-4 mt-7 flex flex-col items-center">
+        <h2 class="font-medium text-3xl basker mb-4">CONTACT US</h2>
+        <div class="w-3/5 basker text-xl">
+            <form id="contactForm" class="font-light text-xl mb-4">
+                <div class="w-full basker flex gap-10">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="queryType">Query Type</label>
+                    <select id="queryType" name="queryType" required>
+                        <option value="" disabled selected>Select a query type</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="support">Support</option>
+                        <option value="feedback">Feedback</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+                </div>
+                <div class="flex justify-center">
+                    <button type="submit" class="submit-btn">Submit</button></div>
+            </form>
+        </div>
+    </div>
     <div>
         <footer >
             <p>&copy; 2024 Your Company Name. All rights reserved.</p>
@@ -95,7 +131,7 @@
 </div>
     <!-- Disclaimer Pop-Up -->
     <div id="disclaimer-popup" class="popup">
-        <div class="popup-content">
+        <div class="popup-content basker">
             <h2><b>DISCLAIMER:</b></h2>
             <p>The Bar Council of India prohibits law firms from soliciting work or advertising in any form. By clicking 'I AGREE', the user acknowledges the following:</p>
             <ul>

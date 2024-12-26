@@ -5,10 +5,6 @@
     box-sizing: border-box;
 }
 
-html,body {
-    font-family: Arial, sans-serif;
-}
-
 
 * {
     margin: 0;
@@ -23,7 +19,7 @@ html, body {
 }
 
 #main {
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
 }
 
 .slider {
@@ -297,3 +293,80 @@ footer {
   font-weight: 400;
   font-style: italic;
 } 
+.contact-container {
+    width: 90%;
+    max-width: 500px;
+    background: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Baskervville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+    font-weight: normal;
+    color: black;
+    font-family: "Baskervville", serif;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: black;
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #cdcdcd;
+    font-weight: normal;
+}
+.form-group textarea {
+    resize: none;
+    height: 200px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #000000;
+    background-color: white;
+    color: black;
+    outline: none;
+}
+
+.form-group select {
+    background-color: white;
+}
+
+.submit-btn {
+    width: 50%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #0056b3;
+}
