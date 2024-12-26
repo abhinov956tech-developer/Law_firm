@@ -1,3 +1,16 @@
+        document.addEventListener('DOMContentLoaded', function () {
+            const slider = document.querySelector('.slider');
+            const slides = document.querySelectorAll('.slide');
+            const totalSlides = slides.length;
+            let currentIndex = 0;
+
+            function showNextSlide() {
+                currentIndex = (currentIndex + 1) % totalSlides;
+                slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+            }
+
+            setInterval(showNextSlide, 3000); // Change slide every 3 seconds
+        });
 document.getElementById('agree-button').addEventListener('click', function() {
     document.getElementById('disclaimer-popup').style.display = 'none';
 });

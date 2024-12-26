@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="bg-slate-950 flex justify-center">
+    <header class=" flex justify-center">
         
     <nav class="basker">
-      <ul class="flex text-xl gap-10 p-4 text-slate-200 bg-slate-950">
+      <ul class="flex text-xl gap-10 p-4 text-slate-950 ">
       <li><a href="demo.html">Home</a></li>
       <li><a href="about.html">Media & Publication</a></li>
       <li><a href="practices.html">Practices</a></li>
@@ -24,40 +24,55 @@
     </header>
 
     <div id="main">
-        <div class="slider h-[60vh]">
-           <image class="w-full h-full object-cover" src="https://hannalawfirms.com/wp-content/uploads/2020/07/law-firm.jpg"></image>
-            
+        <div class="h-[70vh] fixed relative overflow-hidden">
+            <!-- Slider Container -->
+            <div class="slider h-full flex transition-transform duration-700 ease-in-out">
+                <!-- Slides -->
+                <image src="https://wallpaperaccess.com/full/702871.jpg" class="slide min-w-full h-full flex items-center justify-center bg-red-500 text-white text-4xl w-full object-cover"></image>
+                <image src="https://wallpapercave.com/wp/wp6476251.jpg" class="slide min-w-full h-full flex items-center justify-center bg-red-500 text-white text-4xl object-cover"></image>
+                <image src="https://wallpaperaccess.com/full/3308984.jpg" class="slide min-w-full h-full flex items-center justify-center bg-red-500 text-white text-4xl object-cover"></image>
+            </div>
         </div>
         
-        <div class="h-[50vh] w-full mt-4 p-4 relative">
-            <div class="basker text-4xl">Who are We</div>
-            <p class="mt-3 basker text-lg">Established in 2008, our law firm stands as a premier full-service, multi-disciplinary firm in India, offering a comprehensive range of services including transactional, regulatory, advisory, dispute resolution, and tax assistance. Our main offices are situated in New Delhi and Mumbai, allowing us to serve a diverse range of clients, including local and international companies, banks, financial institutions, funds, promoter groups, and public sector entities.
-            Driven by the goal to enhance client service and provide practical legal advice along with dedicated representation across all sectors, our firm has carved out a distinct identity. We handle complex domestic and international matters with significant depth and expertise.
-            Our team of highly qualified and experienced lawyers bring a dynamic and collaborative approach to their work, united by shared values of delivering exceptional service, professionalism, and responsiveness.</p>
+        <div class="h-auto basker flex flex-col items-center mt-10 p-4 ">
+            <div class="flex justify-center p-3 text-4xl">Who are We</div>
+            <div class="w-4/5 text-lg">
+                <p class="mt-3 ">Established in 2008, our law firm stands as a premier full-service, multi-disciplinary firm in India, offering a comprehensive range of services including transactional, regulatory, advisory, dispute resolution, and tax assistance. Our main offices are situated in New Delhi and Mumbai, allowing us to serve a diverse range of clients, including local and international companies, banks, financial institutions, funds, promoter groups, and public sector entities.
+                    Driven by the goal to enhance client service and provide practical legal advice along with dedicated representation across all sectors, our firm has carved out a distinct identity. We handle complex domestic and international matters with significant depth and expertise.
+                    Our team of highly qualified and experienced lawyers bring a dynamic and collaborative approach to their work, united by shared values of delivering exceptional service, professionalism, and responsiveness.</p>
+                    <p class="mt-2 ">
+                        Founded in 2008, Phoenix Legal is a leading full service/multi-disciplinary Indian law firm offering transactional, regulatory, advisory, dispute resolution, and tax services. With its principal offices in New Delhi and Mumbai, the firm advises a diverse clientele including domestic and international companies, banks and financial institutions, funds, promoter groups, and public sector undertakings.
+                    </p>
+                    <p class="mt-2">
+                        Set up with a desire to bring client service into sharper focus, to provide commercially viable legal advice and committed legal representation to our clients across all sectors; the firm has successfully been able to establish its identity outside its origins, dealing with significant depth in complex domestic and international matters.
+                    </p>
+            </div>
         </div>
    
 
-    <div class="h-[60vh] w-screen relative bg-red-400">
-        <h2>About Us</h2>
-        <p>Our law firm has a rich history of providing top-notch legal services to clients across various fields.</p>
+    <div class="h-auto mt-10 flex p-4 flex-col items-center basker">
+        <div class='text-3xl font-medium p-3 flex justify-center '>ABOUT US</div>
+      <div class=" text-xl w-4/5">
+        where our experienced Advocates are well-equipped to provide dedicated and diligent legal services to our clients spanning across India especially the North Eastern States of Assam, Arunachal Pradesh, Meghalaya, Manipur, Tripura, Mizoram, and Nagaland. We specialise in various legal areas including corporate law, constitutional law, real estate, and civil &amp; criminal defence. Our Advocates possess a wealth of experience and expertise and are committed to ensuring that our clients receive the best possible outcome in their legal matters. 
+            </div>
     </div>
 
-    <section class="h-[60vh] w-screen relative bg-green-400">
+    <section class="h-auto mt-10 p-4 bg-green-400">
         <h2>Media & Publications</h2>
         <p>Stay updated with our latest media releases and publications.</p>
     </section>
 
-    <div class="h-[70vh] w-screen relative bg-amber-300">
+    <div class="h-[70vh] relative bg-amber-300">
         <h2>Practices</h2>
         <p>We offer a wide range of legal services, including corporate law, family law, and criminal defense.</p>
     </div>
 
-    <div class="h-[50vh] w-screen relative bg-rose-400">
+    <div class="h-[50vh] bg-rose-400">
         <h2>Partners</h2>
         <p>Meet our esteemed partners who lead our firm with excellence.</p>
     </div>
 
-    <div class=" h-[70vh] w-screen relative bg-yellow-400">
+    <div class=" h-[70vh bg-yellow-400">
         <h2>Contact Us</h2>
         <p>Feel free to reach out to us for any legal assistance. You can contact us via email or phone.</p>
     </div>
