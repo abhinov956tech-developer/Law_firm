@@ -169,66 +169,6 @@ footer {
     width: 100vw;
     background-color: blue;
 }
-.page1{
-    height: 50vh;
-    width: 80vw;
-    position: relative;
-    background-color: aqua;
-}
-.page1>h2{
-    font-weight: 100;
-    margin-top: 1vw;
-}
-.page2{
-    height: 60vh;
-    width: 100vw;
-    position: relative;
-    background-color:bisque;
-}
-.page2>h2{
-    font-weight: 100;
-    margin-top: 1vw;
-}
-.page3{
-    height: 60vh;
-    width: 100vw;
-    position: relative;
-    background-color: aquamarine;
-}
-.page3>h2{
-    font-weight: 100;
-    margin-top: 1vw;
-}
-.page4{
-    height: 70vh;
-    width: 100vw;
-    position: relative;
-    background-color: beige;
-}
-.page4>h2{
-    font-weight: 100;
-    margin-top: 1vw;
-}
-.page5{
-    height: 50vh;
-    width: 100vw;
-    position: relative;
-    background-color: azure;
-}
-.page5>h2{
-    font-weight: 100;
-    margin-top: 1vw;
-}
-.page6{
-    height: 70vh;
-    width: 100vw;
-    position: relative;
-    background-color: blanchedalmond;
-}
-.page6>h2{
-    font-weight: 100;
-    margin-top: 1vw;
-}
 
 footer {
     background-color: lightskyblue;
