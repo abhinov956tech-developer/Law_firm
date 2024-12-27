@@ -9,7 +9,7 @@
                 slider.style.transform = `translateX(-${currentIndex * 100}%)`;
             }
 
-            setInterval(showNextSlide, 3000); // Change slide every 3 seconds
+            setInterval(showNextSlide, 6000);
         });
 document.getElementById('agree-button').addEventListener('click', function() {
     document.getElementById('disclaimer-popup').style.display = 'none';
@@ -40,5 +40,13 @@ document.addEventListener("DOMContentLoaded", function () {
       menuItems.forEach(item => item.classList.remove("active"));
     });
   });
-  
+  document.querySelectorAll('.practice').forEach(practice => {
+    practice.addEventListener('mouseover', () => {
+        practice.querySelector('.icon').style.transform = 'rotate(360deg)';
+    });
+
+    practice.addEventListener('mouseout', () => {
+        practice.querySelector('.icon').style.transform = 'rotate(0deg)';
+    });
+});
   

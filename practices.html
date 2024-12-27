@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Practices</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .practices_container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+
+        .practices {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .practice {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            margin-bottom: 20px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+            position: relative;
+        }
+
+        .practice::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background-color: #303030;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .practice:hover {
+            transform: scale(1.05);
+        }
+
+        .icon {
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+
+        .practice:hover .icon {
+            transform: rotate(360deg);
+        }
+
+        .title-text {
+            font-size: 18px;
+            font-weight: normal;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .description {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+        }
+
+        .read-more {
+            color: #007BFF;
+            text-decoration: none;
+            font-size: 14px;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="flex justify-center fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+        <nav class="basker">
+            <ul class="flex text-xl gap-10 p-4 text-slate-950">
+                <li><a href="demo.html">Home</a></li>
+                <li><a href="about.html">Media & Publication</a></li>
+                <li><a href="practices.html">Practices</a></li>
+                <li><a href="partners.html">Partners</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="practices_container mt-14 basker">
+        <h1 class="title">OUR PRACTICES</h1>
+        <div class="practices">
+            <div class="practice">
+                <div class="icon">&#128188;</div>
+                <div class="title-text">Banking and Finance</div>
+                <div class="description">Banking and finance is one of our core and highly recognized areas of expertise.</div>
+                <a href="#" class="read-more">READ MORE &rarr;</a>
+            </div>
+            <div class="practice">
+                <div class="icon"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z" />
+                  </svg>
+                  </div>
+                <div class="title-text">Corporate Commercial</div>
+                <div class="description">Our key practice area includes corporate and commercial law, spanning various sectors.</div>
+                <a href="#" class="read-more">READ MORE &rarr;</a>
+            </div>
+            <div class="practice">
+                <div class="icon">&#128104;&#8205;&#128104;&#8205;&#128104;</div>
+                <div class="title-text">Dispute Resolution</div>
+                <div class="description">We operate in virtually every area of dispute resolution with significant expertise.</div>
+                <a href="#" class="read-more">READ MORE &rarr;</a>
+            </div>
+            <div class="practice">
+                <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-10">
+                    <path fill-rule="evenodd" d="M11.484 2.17a.75.75 0 0 1 1.032 0 11.209 11.209 0 0 0 7.877 3.08.75.75 0 0 1 .722.515 12.74 12.74 0 0 1 .635 3.985c0 5.942-4.064 10.933-9.563 12.348a.749.749 0 0 1-.374 0C6.314 20.683 2.25 15.692 2.25 9.75c0-1.39.223-2.73.635-3.985a.75.75 0 0 1 .722-.516l.143.001c2.996 0 5.718-1.17 7.734-3.08ZM12 8.25a.75.75 0 0 1 .75.75v3.75a.75.75 0 0 1-1.5 0V9a.75.75 0 0 1 .75-.75ZM12 15a.75.75 0 0 0-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 0 0 .75-.75v-.008a.75.75 0 0 0-.75-.75H12Z" clip-rule="evenodd" />
+                  </svg>
+                  </div>
+                <div class="title-text">Insurance</div>
+                <div class="description">Our insurance practice is a market leader, advising clients on a wide range of matters.</div>
+                <a href="#" class="read-more">READ MORE &rarr;</a>
+            </div>
+            <div class="practice">
+                <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
+                  </svg>
+                  </div>
+                <div class="title-text">Energy, Oil and Gas</div>
+                <div class="description">We have significant experience and expertise in the Energy, Oil & Gas sector.</div>
+                <a href="#" class="read-more">READ MORE &rarr;</a>
+            </div>
+            <div class="practice">
+                <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-10">
+                    <path d="M19.006 3.705a.75.75 0 1 0-.512-1.41L6 6.838V3a.75.75 0 0 0-.75-.75h-1.5A.75.75 0 0 0 3 3v4.93l-1.006.365a.75.75 0 0 0 .512 1.41l16.5-6Z" />
+                    <path fill-rule="evenodd" d="M3.019 11.114 18 5.667v3.421l4.006 1.457a.75.75 0 1 1-.512 1.41l-.494-.18v8.475h.75a.75.75 0 0 1 0 1.5H2.25a.75.75 0 0 1 0-1.5H3v-9.129l.019-.007ZM18 20.25v-9.566l1.5.546v9.02H18Zm-9-6a.75.75 0 0 0-.75.75v4.5c0 .414.336.75.75.75h3a.75.75 0 0 0 .75-.75V15a.75.75 0 0 0-.75-.75H9Z" clip-rule="evenodd" />
+                  </svg>
+                  </div>
+                <div class="title-text">Real Estate</div>
+                <div class="description">We advise clients on increasingly diverse and complex real estate matters.</div>
+                <a href="#" class="read-more">READ MORE &rarr;</a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <footer >
+            <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+            <div class="footer-links">
+              <a href="#about">About Us</a>
+              <a href="#services">Services</a>
+              <a href="#contact">Contact</a>
+            </div>
+            <p>Follow us on:</p>
+            <div class="social-media">
+              <a href="https://www.facebook.com">Facebook</a> | 
+              <a href="https://www.twitter.com">Twitter</a> | 
+              <a href="https://www.instagram.com">Instagram</a>
+            </div>
+          </footer>
+    </div>
+    <script>
+        document.querySelectorAll('.practice').forEach(practice => {
+            practice.addEventListener('mouseover', () => {
+                practice.querySelector('.icon').style.transform = 'rotate(360deg)';
+            });
+
+            practice.addEventListener('mouseout', () => {
+                practice.querySelector('.icon').style.transform = 'rotate(0deg)';
+            });
+        });
+    </script>
+</body>
+</html>

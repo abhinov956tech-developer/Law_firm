@@ -1,9 +1,179 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>About us</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Partners</title>
     <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="text-3xl text-slate-900">
-    Partners PAGE
-  </body>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .title {
+            margin: 20px 0;
+            font-size: 24px;
+            font-weight: bold;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+
+        .partners {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .partner {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 18%;
+            height: auto;
+            margin: 10px;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .partner:hover {
+            transform: scale(1.05);
+        }
+
+        .partner img {
+            width: 100%;
+            height: 250px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+        .partner h3 {
+            margin: 10px 0;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .partner p {
+            margin: 5px 0;
+            color: #777;
+        }
+
+        .partner a {
+            display: inline-block;
+            margin: 5px 0;
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .partner a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+  <header class="flex justify-center fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+      <nav class="basker">
+          <ul class="flex text-xl gap-10 p-4 text-slate-950">
+              <li><a href="demo.html">Home</a></li>
+              <li><a href="about.html">Media & Publication</a></li>
+              <li><a href="practices.html">Practices</a></li>
+              <li><a href="partners.html">Partners</a></li>
+              <li><a href="careers.html">Careers</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+              <li><a href="about.html">About us</a></li>
+          </ul>
+      </nav>
+  </header>
+    <div class="container basker my-20">
+        <div class="title">OUR PARTNERS</div>
+        <div class="partners">
+            <div class="partner">
+                <img src="https://wallpaperaccess.com/full/702871.jpg" alt="Partner Image">
+                <h3>ABC</h3>
+                <p>Partner</p>
+                <a href="#">V-Card</a> | <a href="#">Email</a>
+            </div>
+            <div class="partner">
+                <img src="https://alchetron.com/cdn/kyle-martino-d43f34c1-acd8-4669-90d3-78c112669db-resize-750.jpg" alt="Partner Image">
+                <h3>ABC</h3>
+                <p>Partner</p>
+                <a href="#">V-Card</a> | <a href="#">Email</a>
+            </div>
+            <div class="partner">
+                <img src="path/to/image3.jpg" alt="Partner Image">
+                <h3>ABC</h3>
+                <p>Partner</p>
+                <a href="#">V-Card</a> | <a href="#">Email</a>
+            </div>
+            <div class="partner">
+                <img src="path/to/image4.jpg" alt="Partner Image">
+                <h3>ABC</h3>
+                <p>Partner</p>
+                <a href="#">V-Card</a> | <a href="#">Email</a>
+            </div>
+            <div class="partner">
+                <img src="path/to/image5.jpg" alt="Partner Image">
+                <h3>ABC</h3>
+                <p>Partner</p>
+                <a href="#">V-Card</a> | <a href="#">Email</a>
+            </div>
+            <div class="partner">
+              <img src="path/to/image1.jpg" alt="Partner Image">
+              <h3>ABC</h3>
+              <p>Partner</p>
+              <a href="#">V-Card</a> | <a href="#">Email</a>
+          </div>
+          <div class="partner">
+              <img src="path/to/image2.jpg" alt="Partner Image">
+              <h3>ABC</h3>
+              <p>Partner</p>
+              <a href="#">V-Card</a> | <a href="#">Email</a>
+          </div>
+          <div class="partner">
+              <img src="path/to/image3.jpg" alt="Partner Image">
+              <h3>ABC</h3>
+              <p>Partner</p>
+              <a href="#">V-Card</a> | <a href="#">Email</a>
+          </div>
+          <div class="partner">
+              <img src="path/to/image4.jpg" alt="Partner Image">
+              <h3>ABC</h3>
+              <p>Partner</p>
+              <a href="#">V-Card</a> | <a href="#">Email</a>
+          </div>
+          <div class="partner">
+              <img src="path/to/image5.jpg" alt="Partner Image">
+              <h3>ABC</h3>
+              <p>Partner</p>
+              <a href="#">V-Card</a> | <a href="#">Email</a>
+          </div>
+        </div>
+    </div>
+    <div>
+      <footer >
+          <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <p>Follow us on:</p>
+          <div class="social-media">
+            <a href="https://www.facebook.com">Facebook</a> | 
+            <a href="https://www.twitter.com">Twitter</a> | 
+            <a href="https://www.instagram.com">Instagram</a>
+          </div>
+        </footer>
+  </div>
+</body>
 </html>

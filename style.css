@@ -18,9 +18,6 @@ html, body {
     overflow-x: hidden;
 }
 
-#main {
-    background-color: rgb(255, 255, 255);
-}
 
 .slider {
     height: 50vh;
@@ -155,10 +152,6 @@ footer {
     font-family: "Baskervville", serif;
     font-weight: 400;
     font-style: italic;
-}
-#main{
-
-    background-color: aliceblue;
 }
 .slider{
     height: 50vh;
@@ -369,4 +362,91 @@ footer {
 
 .submit-btn:hover {
     background: rgb(46, 46, 46);
+}
+.practices_container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+.practices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.practice {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    position: relative;
+}
+
+.practice::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-color: #303030;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.practice:hover {
+    transform: scale(1.05);
+}
+
+.icon {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.practice:hover .icon {
+    transform: rotate(360deg);
+}
+
+.title-text {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.read-more {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    display: block;
+    margin-top: 10px;
 }
