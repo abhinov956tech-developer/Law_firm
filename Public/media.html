@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <header class="flex justify-center fixed top-0 left-0 right-0 bg-white shadow-md z-50">
-        <nav class="basker">
+    <header class="flex items-center p-2 sm:px-4 fixed top-0 left-0 right-0 bg-white shadow-md z-50 sm:items-center">
+        <div class="w-full sm:w-2/6 "> <image class="h-12 w-12 object-contain" src="./LawLogo-removebg-preview.png"></image></div>
+        <nav class="hidden basker xl:block">
             <ul class="flex text-xl gap-10 p-4 text-slate-950">
                 <li><a href="demo.html">Home</a></li>
-                <li><a href="media.html">Media & Publication</a></li>
+                <li><a href="about.html">Media & Publication</a></li>
                 <li><a href="practices.html">Practices</a></li>
                 <li><a href="partners.html">Partners</a></li>
                 <li><a href="careers.html">Careers</a></li>
@@ -20,6 +21,11 @@
                 <li><a href="about.html">About us</a></li>
             </ul>
         </nav>
+        <div class="block sm:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-8">
+                <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+              </svg>              
+        </div>
     </header>
     <div class="h-auto mt-20 p-4">
         <h2 class="text-center text-3xl basker">Media & Publications</h2>
