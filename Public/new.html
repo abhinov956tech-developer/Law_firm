@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Right Sidebar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      top: 0;
+      right: 0; /* Change from left to right */
+      background-color: #ffffff;
+      overflow-x: hidden;
+      transition: 0.3s;
+      padding-top: 60px;
+      color: rgb(0, 0, 0);
+    }
+    .sidebar a {
+      padding: 10px 15px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #000000;
+      display: block;
+      transition: 0.3s;
+    }
+    .sidebar a:hover {
+      color: rgb(0, 0, 0);
+    }
+    .open-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px; /* Move button to the right */
+      background-color: #ffffff;
+      color: rgb(0, 0, 0);
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      left: 20px; /* Change to left for right sidebar */
+      font-size: 24px;
+      margin-left: 50px;
+      color: rgb(0, 0, 0);
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<div id="sidebar" class="sidebar">
+  <button class="close-btn" onclick="toggleSidebar()">×</button>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- Open Sidebar Button -->
+<button class="open-btn" onclick="toggleSidebar()">☰</button>
+
+<script>
+  function toggleSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    if (sidebar.style.width === '150px') {
+      sidebar.style.width = '0';
+    } else {
+      sidebar.style.width = '150px';
+    }
+  }
+</script>
+
+</body>
+</html>

@@ -377,6 +377,30 @@ footer {
     border-top-right-radius: 8px;
 }
 
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0; /* Change from left to right */
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    color: rgb(0, 0, 0);
+  }
+  .sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidebar a:hover {
+    color: rgb(0, 0, 0);
+  }
+  
 .practice:hover {
     transform: scale(1.05);
 }
