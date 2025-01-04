@@ -8,7 +8,17 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <header class="flex items-center p-2 sm:px-4 fixed top-0 left-0 right-0 bg-white shadow-md z-50 sm:items-center">
+    <div id="sidebar" class="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">X</button>
+        <a href="demo.html">Home</a>
+        <a href="about.html">Media & Publication</a>
+        <a href="practices.html">Practices</a>
+        <a href="partners.html">Partners</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact us</a>
+        <a href="about.html">About us</a>
+      </div>
+    <header class="flex items-center sm:px-4 fixed top-0 left-0 right-0 bg-white shadow-md z-50 sm:items-center">
         <div class="w-full xl:w-2/6 "> <image class="h-12 w-12 object-contain" src="./LawLogo-removebg-preview.png"></image></div>
         <nav class="hidden basker xl:block">
             <ul class="flex text-xl gap-10 p-4 text-slate-950">
@@ -22,13 +32,13 @@
             </ul>
         </nav>
         <div class="block xl:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-8">
+            <svg role="button" onclick="toggleSidebar()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-8">
                 <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
               </svg>              
         </div>
     </header>
 
-    <div class="mt-14" id="main">
+    <div class="mt-12" id="main">
         <div class="h-64 sm:h-[70vh] fixed relative overflow-hidden">
             <!-- Slider Container -->
             <div class="slider h-full flex transition-transform duration-700 ease-in-out">
@@ -201,6 +211,16 @@
         </div>
     </div>
 
+    <script>
+        function toggleSidebar() {
+          const sidebar = document.getElementById('sidebar');
+          if (sidebar.style.width === '150px') {
+            sidebar.style.width = '0';
+          } else {
+            sidebar.style.width = '150px';
+          }
+        }
+      </script>
     <script src="script.js"></script>
 </body>
 </html>
