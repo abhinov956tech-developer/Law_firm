@@ -33,7 +33,6 @@
       color: rgb(0, 0, 0);
     }
     .open-btn {
-      position: fixed;
       top: 20px;
       right: 20px; /* Move button to the right */
       background-color: #ffffff;
@@ -67,8 +66,8 @@
   <a href="#contact">Contact</a>
 </div>
 
-<!-- Open Sidebar Button -->
-<button class="open-btn" onclick="toggleSidebar()">☰</button>
+<div class="flex justify-right">
+  <button class="open-btn" onclick="toggleSidebar()">☰</button></div>
 
 <script>
   function toggleSidebar() {

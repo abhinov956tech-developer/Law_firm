@@ -441,3 +441,48 @@ footer {
     display: block;
     margin-top: 10px;
 }
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0; /* Change from left to right */
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    color: rgb(0, 0, 0);
+    z-index: 70;
+  }
+  .sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidebar a:hover {
+    color: rgb(0, 0, 0);
+  }
+  .open-btn {
+    top: 20px;
+    right: 20px; /* Move button to the right */
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    left: 20px; /* Change to left for right sidebar */
+    font-size: 24px;
+    margin-left: 50px;
+    color: rgb(0, 0, 0);
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
