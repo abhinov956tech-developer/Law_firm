@@ -488,3 +488,26 @@ footer {
     border: none;
     cursor: pointer;
   }
+
+  .partner-links {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.partner-links a {
+    padding: 0.5rem 1rem;
+    color: #3498db;
+    text-decoration: none;
+    border: 1px solid #3498db;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.partner-links a:hover {
+    background-color: #3498db;
+    color: white;
+}
