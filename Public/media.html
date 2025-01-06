@@ -8,26 +8,26 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <header class="flex items-center p-2 sm:px-4 fixed top-0 left-0 right-0 bg-white shadow-md z-50 ">
-    <div class="absolute left-4"> 
-        <image class="h-12 w-12 object-contain" src="./LawLogo-removebg-preview.png"></image>
-    </div>
-        <nav class="hidden basker sm:block flex-1">
-            <ul class="flex text-xl gap-10 p-4 text-slate-950 justify-center">
-                <li><a href="demo.html">Home</a></li>
-                <li><a href="media.html">Media & Publication</a></li>
-                <li><a href="practices.html">Practices</a></li>
-                <li><a href="partners.html">Partners</a></li>
-                <li><a href="careers.html">Careers</a></li>
-                <li><a href="contact.html">Contact us</a></li>
-                <li><a href="about.html">About us</a></li>
+    <header class="flex px-4 items-center fixed top-0 left-0 right-0 bg-white shadow-md z-40 h-16">
+        <div class="flex-shrink-0">
+            <image class="h-12 w-12 object-contain" src="./LawLogo-removebg-preview.png" alt="Logo"></image>
+        </div>
+        <nav class="hidden xl:block flex-grow">
+            <ul class="flex text-xl basker gap-10 p-4 text-slate-950 justify-center">
+                <li><a href="demo.html" class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Home</a></li>
+                <li><a href="media.html" class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Media & Publication</a></li>
+                <li><a href="practices.html" class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Practices</a></li>
+                <li><a href="partners.html" class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Partners</a></li>
+                <li><a href="careers.html" class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Careers</a></li>
+                <li><a href="contact.html" class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Contact us</a></li>
+                <li><a href="about.html" class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">About us</a></li>
             </ul>
         </nav>
-        <div class="block sm:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-8">
+        <button class="block xl:hidden ml-auto" onclick="toggleSidebar()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8">
                 <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
-              </svg>              
-        </div>
+            </svg>
+        </button>
     </header>
     <div class="min-h-screen bg-gray-50">
         <!-- Hero Section -->
