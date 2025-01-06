@@ -42,21 +42,36 @@
 
     <div class="mt-12" id="main">
         <div class="h-64 sm:h-[70vh] fixed relative overflow-hidden">
-            <!-- Slider Container -->
             <div class="slider h-full flex transition-transform duration-700 ease-in-out">
-                <!-- Slides -->
-                <div class="slide min-w-full h-full flex items-center justify-center bg-red-500 text-white text-4xl w-full object-cover"><image src="https://wallpaperaccess.com/full/702871.jpg" class="slide min-w-full h-full flex items-center justify-center bg-red-500 text-white text-4xl w-full object-cover"></image>
-                <div class="absolute inset-0 bg-black bg-opacity-50">
-                    <div class="basker h-full text-2xl md:text-4xl flex flex-col items-center justify-center text-amber-200 px-4">"Our goal is simple: justice for every client."</div>
-                </div>
-                </div>
-                <div class="slide min-w-full h-full flex items-center justify-center bg-red-500 text-white text-4xl w-full object-cover"><image src="../media/pic_7.jpeg" class="slide min-w-full h-full flex items-center justify-center bg-red-500 text-white text-4xl object-cover"></image>
+                <!-- Slide 1 -->
+                <div class="slide min-w-full h-full relative">
+                    <img src="https://wallpaperaccess.com/full/702871.jpg" class="w-full h-full object-cover" alt="Slide 1">
                     <div class="absolute inset-0 bg-black bg-opacity-50">
-                        <div class="basker h-full text-2xl md:text-4xl flex flex-col items-center justify-center text-amber-200 px-4">"Our goal is simple: justice for every client."</div>
+                        <div class="basker h-full text-2xl md:text-4xl flex flex-col items-center justify-center text-amber-200 px-4">
+                            "Our goal is simple: justice for every client."
+                        </div>
                     </div>
-                    </div>
+                </div>
                 
-                <image src="../media/pic_8.jpeg" class="slide min-w-full h-full flex items-center justify-center bg-red-500 text-white text-4xl object-cover"></image>
+                <!-- Slide 2 -->
+                <div class="slide min-w-full h-full relative">
+                    <img src="../media/pic_7.jpeg" class="w-full h-full object-cover" alt="Slide 2">
+                    <div class="absolute inset-0 bg-black bg-opacity-50">
+                        <div class="basker h-full text-2xl md:text-4xl flex flex-col items-center justify-center text-amber-200 px-4">
+                            "Our goal is simple: justice for every client."
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 3 -->
+                <div class="slide min-w-full h-full relative">
+                    <img src="../media/pic_8.jpeg" class="w-full h-full object-cover" alt="Slide 3">
+                    <div class="absolute inset-0 bg-black bg-opacity-50">
+                        <div class="basker h-full text-2xl md:text-4xl flex flex-col items-center justify-center text-amber-200 px-4">
+                            "Our goal is simple: justice for every client."
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         
@@ -287,19 +302,24 @@
     </footer>
 
     <!-- Disclaimer Pop-Up -->
-    <div id="disclaimer-popup" class="popup">
-        <div class="popup-content basker">
+    
+    <div id="disclaimer-popup" class="popup p-6 space-y-6">
+        <div class="popup-content basker ">
             <h2><b>DISCLAIMER:</b></h2>
             <p>The Bar Council of India prohibits law firms from soliciting work or advertising in any form. By clicking 'I AGREE', the user acknowledges the following:</p>
-            <ul>
+            <ul class="space-y-3 list-disc pl-6">
                 <li>The user seeks more information about our firm, its practice areas, and attorneys solely for their own use.</li>
                 <li>This information is provided at the user's specific request, and any material obtained or downloaded from this website is done at the user's discretion. The transmission, receipt, or use of this site does not establish a lawyer-client relationship.</li>
                 <li>The content on this website does not constitute legal advice or opinion.</li>
             </ul>
             <p>Our firm is not responsible for any actions taken by the user based on the material/information provided on this website. Users with legal issues should seek independent legal counsel.</p>
-            <button id="agree-button">I Agree</button>
+            <button class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold 
+            hover:bg-blue-700 transition-colors duration-200 
+            focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2" id="agree-button">I Agree</button>
         </div>
     </div>
+    
+    
 
     <script>
         function toggleSidebar() {
