@@ -15,7 +15,8 @@
         }
 
         .container {
-            width: 80%;
+            width: 90%;
+            max-width: 1400px;
             margin: 0 auto;
             text-align: center;
         }
@@ -29,21 +30,20 @@
         }
 
         .partners {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
         }
 
         .partner {
             background-color: #fff;
             border: 1px solid #ddd;
             border-radius: 5px;
-            width: 18%;
-            height: auto;
-            margin: 10px;
-            padding: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            overflow: hidden;
+            position: relative;
         }
 
         .partner:hover {
@@ -55,6 +55,10 @@
             height: 250px;
             border-radius: 5px;
             object-fit: cover;
+        }
+
+        .partner:hover img {
+            transform: scale(1.05);
         }
 
         .partner h3 {
@@ -72,6 +76,7 @@
             display: flex;
             gap: 1rem;
             justify-content: center;
+            margin-bottom: 1rem;
         }
 
         .partner-links a {
@@ -87,6 +92,25 @@
         .partner-links a:hover {
             background-color: #3498db;
             color: white;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            
+            .partners {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                gap: 1.5rem;
+            }
+
+            .title {
+                font-size: 2rem;
+            }
+
+            .partner img {
+                height: 280px;
+            }
         }
     </style>
 </head>
@@ -122,8 +146,7 @@
             </svg>
         </button>
     </header>
-<<<<<<< HEAD
-    <div class="container basker my-20">
+    <div class="container basker my-24">
         <div class="title">OUR PARTNERS</div>
         <div class="partners">
             <div class="partner">
@@ -147,7 +170,7 @@
             <div class="partner">
                 <img src="../media/pic_3.jpg" alt="Partner Image">
                 <h3>Ram Jethmalani</h3>
-                <p>Former Minister of Law and Justice of India</p>
+                <p>Former Minister of Law and Justice</p>
                 <div class="partner-links">
                     <a href="#">V-Card</a>
                     <a href="#">Email</a>
@@ -181,91 +204,6 @@
             </div>
           </div>
           
-=======
-
-    <div class="container mx-auto w-4/5 basker my-20">
-        <h1 class="text-2xl font-bold border-b-2 border-gray-800 pb-2 mb-8 text-center">OUR PARTNERS</h1>
-        <div class="flex flex-wrap justify-around">
-            <!-- Partner Card 1 -->
-            <div class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 m-4 transform transition duration-300 hover:scale-105">
-                <img src="../media/pic_1.jpg" alt="Partner Image" class="w-full h-64 object-cover rounded-lg">
-                <h3 class="text-lg font-semibold text-gray-800 my-2">J sai deepak</h3>
-                <p class="text-gray-600 mb-2">Indian lawyer and columnist</p>
-                <div class="text-blue-600">
-                    <a href="#" class="hover:underline">V-Card</a> | 
-                    <a href="#" class="hover:underline">Email</a>
-                </div>
-            </div>
-
-            <!-- Partner Card 2 -->
-            <div class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 m-4 transform transition duration-300 hover:scale-105">
-                <img src="../media/pic_2.jpg" alt="Partner Image" class="w-full h-64 object-cover rounded-lg">
-                <h3 class="text-lg font-semibold text-gray-800 my-2">Fali S. Nariman</h3>
-                <p class="text-gray-600 mb-2">Indian jurist</p>
-                <div class="text-blue-600">
-                    <a href="#" class="hover:underline">V-Card</a> | 
-                    <a href="#" class="hover:underline">Email</a>
-                </div>
-            </div>
-
-            <!-- Partner Card 3 -->
-            <div class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 m-4 transform transition duration-300 hover:scale-105">
-                <img src="../media/pic_3.jpg" alt="Partner Image" class="w-full h-64 object-cover rounded-lg">
-                <h3 class="text-lg font-semibold text-gray-800 my-2">Ram Jethmalani</h3>
-                <p class="text-gray-600 mb-2">Former Minister of Law and Justice of India</p>
-                <div class="text-blue-600">
-                    <a href="#" class="hover:underline">V-Card</a> | 
-                    <a href="#" class="hover:underline">Email</a>
-                </div>
-            </div>
-
-            <!-- Partner Card 4 -->
-            <div class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 m-4 transform transition duration-300 hover:scale-105">
-                <img src="../media/pic_4.jpg" alt="Partner Image" class="w-full h-64 object-cover rounded-lg">
-                <h3 class="text-lg font-semibold text-gray-800 my-2">Nani Palkhivala</h3>
-                <p class="text-gray-600 mb-2">Indian lawyer and jurist</p>
-                <div class="text-blue-600">
-                    <a href="#" class="hover:underline">V-Card</a> | 
-                    <a href="#" class="hover:underline">Email</a>
-                </div>
-            </div>
-
-            <!-- Partner Card 5 -->
-            <div class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 m-4 transform transition duration-300 hover:scale-105">
-                <img src="../media/pic_5.jpg" alt="Partner Image" class="w-full h-64 object-cover rounded-lg">
-                <h3 class="text-lg font-semibold text-gray-800 my-2">Harish Salve</h3>
-                <p class="text-gray-600 mb-2">Former Solicitor General of India</p>
-                <div class="text-blue-600">
-                    <a href="#" class="hover:underline">V-Card</a> | 
-                    <a href="#" class="hover:underline">Email</a>
-                </div>
-            </div>
-
-            <!-- Partner Card 6 -->
-            <div class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 m-4 transform transition duration-300 hover:scale-105">
-                <img src="../media/pic_6.jpg" alt="Partner Image" class="w-full h-64 object-cover rounded-lg">
-                <h3 class="text-lg font-semibold text-gray-800 my-2">Gopal Subramanium</h3>
-                <p class="text-gray-600 mb-2">Former Solicitor General of India</p>
-                <div class="text-blue-600">
-                    <a href="#" class="hover:underline">V-Card</a> | 
-                    <a href="#" class="hover:underline">Email</a>
-                </div>
-            </div>
-
-            <!-- Additional partner cards with placeholder images -->
-            <div class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 m-4 transform transition duration-300 hover:scale-105">
-                <img src="/api/placeholder/400/320" alt="Partner Image" class="w-full h-64 object-cover rounded-lg">
-                <h3 class="text-lg font-semibold text-gray-800 my-2">ABC</h3>
-                <p class="text-gray-600 mb-2">Partner</p>
-                <div class="text-blue-600">
-                    <a href="#" class="hover:underline">V-Card</a> | 
-                    <a href="#" class="hover:underline">Email</a>
-                </div>
-            </div>
-
-            <!-- Repeat for remaining placeholder partners -->
-            <!-- You can copy the above placeholder card structure for the remaining partners -->
->>>>>>> 09739083dcb9ada08c6f4ce237f87ea769a7e403
         </div>
     </div>
     <script src="script.js"></script>
