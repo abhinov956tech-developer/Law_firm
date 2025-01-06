@@ -75,13 +75,27 @@
         </div>
         <nav class="hidden xl:block flex-grow">
             <ul class="flex text-xl basker gap-10 p-4 text-slate-950 justify-center">
-                <li><a href="demo.html" class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Home</a></li>
-                <li><a href="media.html" class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Media & Publication</a></li>
-                <li><a href="#practices" class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Practices</a></li>
-                <li><a href="partners" class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Partners</a></li>
-                <li><a href="careers.html" class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Careers</a></li>
-                <li><a href="contact.html" class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Contact us</a></li>
-                <li><a href="about.html" class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">About us</a></li>
+                <li><a href="demo.html"
+                        class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Home</a>
+                </li>
+                <li><a href="media.html"
+                        class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Media
+                        & Publication</a></li>
+                <li><a href="#practices"
+                        class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Practices</a>
+                </li>
+                <li><a href="partners"
+                        class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Partners</a>
+                </li>
+                <li><a href="careers.html"
+                        class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Careers</a>
+                </li>
+                <li><a href="contact.html"
+                        class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Contact
+                        us</a></li>
+                <li><a href="about.html"
+                        class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">About
+                        us</a></li>
             </ul>
         </nav>
         <button class="block xl:hidden ml-auto" onclick="toggleSidebar()">
@@ -94,10 +108,11 @@
     </header>
 
     <div class="mt-12" id="main">
-        <div class="h-64 sm:h-[70vh] fixed relative overflow-hidden">
-            <div class="slider h-full flex transition-transform duration-700 ease-in-out">
+
+        <div class="hero-swiper h-64 sm:h-[70vh] fixed relative overflow-hidden">
+            <div class="swiper-wrapper h-full">
                 <!-- Slide 1 -->
-                <div class="slide min-w-full h-full relative">
+                <div class="swiper-slide min-w-full h-full relative">
                     <img src="https://wallpaperaccess.com/full/702871.jpg" class="w-full h-full object-cover"
                         alt="Slide 1">
                     <div class="absolute inset-0 bg-black bg-opacity-50">
@@ -109,7 +124,7 @@
                 </div>
 
                 <!-- Slide 2 -->
-                <div class="slide min-w-full h-full relative">
+                <div class="swiper-slide min-w-full h-full relative">
                     <img src="../media/pic_7.jpeg" class="w-full h-full object-cover" alt="Slide 2">
                     <div class="absolute inset-0 bg-black bg-opacity-50">
                         <div
@@ -120,7 +135,7 @@
                 </div>
 
                 <!-- Slide 3 -->
-                <div class="slide min-w-full h-full relative">
+                <div class="swiper-slide min-w-full h-full relative">
                     <img src="../media/pic_8.jpeg" class="w-full h-full object-cover" alt="Slide 3">
                     <div class="absolute inset-0 bg-black bg-opacity-50">
                         <div
@@ -131,6 +146,7 @@
                 </div>
             </div>
         </div>
+
 
         <div id="aboutus" class="h-auto bg-white basker flex flex-col items-center mt-2 sm:mt-10 p-4 ">
             <div class="flex justify-center p-3 sm:text-4xl">WHO ARE WE</div>
@@ -168,7 +184,7 @@
             <p>Stay updated with our latest media releases and publications.</p>
         </section>
 
-        <div id="practices" class="h-auto lg:h-[70vh] ">
+        <div id="practices" class="h-auto ">
             <div class="flex justify-center">
                 <div class="container mt-5 sm:mt-10 px-6">
                     <h1
@@ -450,6 +466,14 @@
     </div>
 
     <script>
+        const heroSwiper = new Swiper('.hero-swiper', {
+            loop: true, // Optional: Enables infinite loop
+            autoplay: {
+                delay: 5000, // Autoplay delay in milliseconds
+                disableOnInteraction: false, // Keeps autoplay active after interaction
+            },
+            navigation: false, // No navigation arrows
+        });
         const swiper = new Swiper('.mySwiper', {
             slidesPerView: 1,
             spaceBetween: 20,
