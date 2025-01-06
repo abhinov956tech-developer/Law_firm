@@ -67,16 +67,26 @@
             margin: 5px 0;
             color: #777;
         }
-
-        .partner a {
-            display: inline-block;
-            margin: 5px 0;
-            color: #007BFF;
-            text-decoration: none;
+        .partner-links {
+            margin-top: 1rem;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
         }
 
-        .partner a:hover {
-            text-decoration: underline;
+        .partner-links a {
+            padding: 0.5rem 1rem;
+            color: #3498db;
+            text-decoration: none;
+            border: 1px solid #3498db;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .partner-links a:hover {
+            background-color: #3498db;
+            color: white;
         }
     </style>
 </head>
@@ -109,62 +119,57 @@
                 <img src="../media/pic_1.jpg" alt="Partner Image">
                 <h3>J sai deepak </h3>
                 <p>Indian lawyer and columnist</p>
-                <a href="#">V-Card</a> | <a href="#">Email</a>
+                <div class="partner-links">
+                    <a href="#">V-Card</a>
+                    <a href="#">Email</a>
+                </div>
             </div>
             <div class="partner">
                 <img src="../media/pic_2.jpg" alt="Partner Image">
                 <h3>Fali S. Nariman</h3>
                 <p>Indian jurist</p>
-                <a href="#">V-Card</a> | <a href="#">Email</a>
+                <div class="partner-links">
+                    <a href="#">V-Card</a>
+                    <a href="#">Email</a>
+                </div>
             </div>
             <div class="partner">
                 <img src="../media/pic_3.jpg" alt="Partner Image">
                 <h3>Ram Jethmalani</h3>
                 <p>Former Minister of Law and Justice of India</p>
-                <a href="#">V-Card</a> | <a href="#">Email</a>
+                <div class="partner-links">
+                    <a href="#">V-Card</a>
+                    <a href="#">Email</a>
+                </div>
             </div>
             <div class="partner">
                 <img src="../media/pic_4.jpg" alt="Partner Image">
                 <h3>Nani Palkhivala</h3>
                 <p>Indian lawyer and jurist</p>
-                <a href="#">V-Card</a> | <a href="#">Email</a>
+                <div class="partner-links">
+                    <a href="#">V-Card</a>
+                    <a href="#">Email</a>
+                </div>
             </div>
             <div class="partner">
                 <img src="../media/pic_5.jpg" alt="Partner Image">
                 <h3>Harish Salve</h3>
                 <p>Former Solicitor General of India</p>
-                <a href="#">V-Card</a> | <a href="#">Email</a>
+                <div class="partner-links">
+                    <a href="#">V-Card</a>
+                    <a href="#">Email</a>
+                </div>
             </div>
             <div class="partner">
               <img src="../media/pic_6.jpg" alt="Partner Image">
               <h3>Gopal Subramanium</h3>
               <p>Former Solicitor General of India</p>
-              <a href="#">V-Card</a> | <a href="#">Email</a>
+              <div class="partner-links">
+                <a href="#">V-Card</a>
+                <a href="#">Email</a>
+            </div>
           </div>
-          <div class="partner">
-              <img src="path/to/image2.jpg" alt="Partner Image">
-              <h3>ABC</h3>
-              <p>Partner</p>
-              <a href="#">V-Card</a> | <a href="#">Email</a>
-          </div>
-          <div class="partner">
-              <img src="path/to/image3.jpg" alt="Partner Image">
-              <h3>ABC</h3>
-              <p>Partner</p>
-              <a href="#">V-Card</a> | <a href="#">Email</a>
-          </div>
-          <div class="partner">
-              <img src="path/to/image4.jpg" alt="Partner Image">
-              <h3>ABC</h3>
-              <p>Partner</p>
-              <a href="#">V-Card</a> | <a href="#">Email</a>
-          </div>
-          <div class="partner">
-              <img src="path/to/image5.jpg" alt="Partner Image">
-              <h3>ABC</h3>
-              <p>Partner</p>
-              <a href="#">V-Card</a> | <a href="#">Email</a>
-          </div>
+          
         </div>
     </div>
     <footer class="bg-gray-900 text-gray-400 py-6 mt-12">
