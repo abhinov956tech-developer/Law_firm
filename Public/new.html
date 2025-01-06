@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Law Firm Website</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -21,12 +24,12 @@
         <nav class="px-4 py-6">
             <div class="space-y-4">
                 <a href="demo.html" class="block px-4 py-3 text-gray-300 hover:bg-gray-800 hover:text-amber-200 rounded-lg transition-all duration-200 font-serif">Home</a>
-                <a href="media.html" class="block px-4 py-3 text-gray-300 hover:bg-gray-800 hover:text-amber-200 rounded-lg transition-all duration-200 font-serif">Media & Publication</a>
-                <a href="#practices" class="block px-4 py-3 text-gray-300 hover:bg-gray-800 hover:text-amber-200 rounded-lg transition-all duration-200 font-serif">Practices</a>
-                <a href="#partners" class="block px-4 py-3 text-gray-300 hover:bg-gray-800 hover:text-amber-200 rounded-lg transition-all duration-200 font-serif">Partners</a>
+                <a href="media.html"  class="block px-4 py-3 text-gray-300 hover:bg-gray-800 hover:text-amber-200 rounded-lg transition-all duration-200 font-serif">Media & Publication</a>
+                <a href="#practices" onclick="toggleSidebar()" class="block px-4 py-3 text-gray-300 hover:bg-gray-800 hover:text-amber-200 rounded-lg transition-all duration-200 font-serif">Practices</a>
+                <a href="#partners" onclick="toggleSidebar()" class="block px-4 py-3 text-gray-300 hover:bg-gray-800 hover:text-amber-200 rounded-lg transition-all duration-200 font-serif">Partners</a>
                 <a href="careers.html" class="block px-4 py-3 text-gray-300 hover:bg-gray-800 hover:text-amber-200 rounded-lg transition-all duration-200 font-serif">Careers</a>
                 <a href="contact.html" class="block px-4 py-3 text-gray-300 hover:bg-gray-800 hover:text-amber-200 rounded-lg transition-all duration-200 font-serif">Contact us</a>
-                <a href="#aboutus" class="block px-4 py-3 text-gray-300 hover:bg-gray-800 hover:text-amber-200 rounded-lg transition-all duration-200 font-serif">About us</a>
+                <a href="#aboutus" onclick="toggleSidebar()" class="block px-4 py-3 text-gray-300 hover:bg-gray-800 hover:text-amber-200 rounded-lg transition-all duration-200 font-serif">About us</a>
             </div>
         </nav>
     
@@ -52,7 +55,7 @@
             <ul class="flex text-xl basker gap-10 p-4 text-slate-950 justify-center">
                 <li><a href="demo.html" class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Home</a></li>
                 <li><a href="media.html" class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Media & Publication</a></li>
-                <li><a href="practices.html" class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Practices</a></li>
+                <li><a href="#practices" class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Practices</a></li>
                 <li><a href="partners.html" class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Partners</a></li>
                 <li><a href="careers.html" class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Careers</a></li>
                 <li><a href="contact.html" class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Contact us</a></li>
@@ -69,25 +72,21 @@
     <div class="mt-12" id="main">
         <div class="h-64 sm:h-[70vh] fixed relative overflow-hidden">
             <!-- Slider Container -->
-           <div class="slider h-full flex transition-transform duration-700 ease-in-out">
-              <!-- Slides -->
-              <div class="slide min-w-full h-full flex items-center justify-center bg-red-500 text-white text-4xl w-full object-cover"><image src="https://wallpaperaccess.com/full/702871.jpg" class="slide min-w-full h-full flex items-center justify-center bg-red-500 text-white text-4xl w-full object-cover"></image>
-              <div class="absolute inset-0 bg-black bg-opacity-40">
-                  <div class="basker h-full text-2xl md:text-4xl flex flex-col items-center justify-center text-amber-200 px-4">"Our goal is simple: justice for every client."</div>
-              </div>
-              </div>
-              <image src="../media/pic_8.jpeg" class="slide min-w-full h-full flex items-center justify-center bg-red-500 text-white text-4xl object-cover"></image>
-              <div class="slide min-w-full h-full flex items-center justify-center bg-red-500 text-white text-4xl object-cover"><image src="../media/pic_7.jpeg" class="slide min-w-full h-full flex items-center justify-center bg-red-500 text-white text-4xl object-cover"></image>
-              <div class="absolute inset-0 bg-black bg-opacity-40">
-                  <div class="basker h-full text-2xl md:text-4xl flex flex-col items-center justify-center text-amber-200 px-4">"Our goal is simple: justice for every client."</div>
-              </div>
-              </div>
-              <div class="slide min-w-full h-full flex items-center justify-center bg-red-500 text-white text-4xl w-full object-cover"><image src="https://wallpaperaccess.com/full/702871.jpg" class="slide min-w-full h-full flex items-center justify-center bg-red-500 text-white text-4xl w-full object-cover"></image>
-                <div class="absolute inset-0 bg-black bg-opacity-40">
+            <div class="slider h-full flex transition-transform duration-700 ease-in-out">
+                <!-- Slides -->
+                <div class="slide min-w-full h-full flex items-center justify-center bg-red-500 text-white text-4xl w-full object-cover"><image src="https://wallpaperaccess.com/full/702871.jpg" class="slide min-w-full h-full flex items-center justify-center bg-red-500 text-white text-4xl w-full object-cover"></image>
+                <div class="absolute inset-0 bg-black bg-opacity-50">
                     <div class="basker h-full text-2xl md:text-4xl flex flex-col items-center justify-center text-amber-200 px-4">"Our goal is simple: justice for every client."</div>
                 </div>
                 </div>
-          </div>
+                <div class="slide min-w-full h-full flex items-center justify-center bg-red-500 text-white text-4xl w-full object-cover"><image src="../media/pic_7.jpeg" class="slide min-w-full h-full flex items-center justify-center bg-red-500 text-white text-4xl object-cover"></image>
+                    <div class="absolute inset-0 bg-black bg-opacity-50">
+                        <div class="basker h-full text-2xl md:text-4xl flex flex-col items-center justify-center text-amber-200 px-4">"Our goal is simple: justice for every client."</div>
+                    </div>
+                </div>
+                
+                <image src="../media/pic_8.jpeg" class="slide min-w-full h-full flex items-center justify-center bg-red-500 text-white text-4xl object-cover"></image>
+            </div>
         </div>
         
         <div id="aboutus" class="h-auto bg-white basker flex flex-col items-center mt-2 sm:mt-10 p-4 ">
@@ -174,90 +173,86 @@
             </div>
         </div>
     </div>
-
-    <div id="partners" class="h-auto bg-slate-200 ">
-        <div class="container mx-auto w-4/5 basker my-20">
-            <h1 class="text-2xl font-bold border-b-2 border-gray-800 pb-2 mb-8 text-center">OUR PARTNERS</h1>
-            <div class="flex flex-wrap justify-around">
+<div id="partners" class="h-auto bg-slate-900">
+    <div class="container mx-auto w-4/5 pb-12 basker my-20">
+        <h1 class="text-2xl font-bold border-b-2 mt-8 text-slate-200 border-slate-200 pb-2 mb-8 text-center">OUR PARTNERS</h1>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
                 <!-- Partner Card 1 -->
-                <div class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 m-4 transform transition duration-300 hover:scale-105">
-                    <img src="../media/pic_1.jpg" alt="Partner Image" class="w-full h-64 object-cover rounded-lg">
-                    <h3 class="text-lg font-semibold text-gray-800 my-2">J sai deepak</h3>
-                    <p class="text-gray-600 mb-2">Indian lawyer and columnist</p>
-                    <div class="text-blue-600">
-                        <a href="#" class="hover:underline">V-Card</a> | 
-                        <a href="#" class="hover:underline">Email</a>
+                <div class="swiper-slide">
+                    <div class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 transform transition duration-300 hover:scale-105">
+                        <img src="../media/pic_1.jpg" alt="Partner Image" class="w-full h-64 object-cover rounded-lg">
+                        <h3 class="text-lg font-semibold text-gray-800 my-2">J Sai Deepak</h3>
+                        <p class="text-gray-600 mb-2">Indian lawyer and columnist</p>
+                        <div class="text-blue-600">
+                            <a href="#" class="hover:underline">V-Card</a> |
+                            <a href="#" class="hover:underline">Email</a>
+                        </div>
                     </div>
                 </div>
-    
+                <!-- Repeat for other partner cards -->
                 <!-- Partner Card 2 -->
-                <div class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 m-4 transform transition duration-300 hover:scale-105">
-                    <img src="../media/pic_2.jpg" alt="Partner Image" class="w-full h-64 object-cover rounded-lg">
-                    <h3 class="text-lg font-semibold text-gray-800 my-2">Fali S. Nariman</h3>
-                    <p class="text-gray-600 mb-2">Indian jurist</p>
-                    <div class="text-blue-600">
-                        <a href="#" class="hover:underline">V-Card</a> | 
-                        <a href="#" class="hover:underline">Email</a>
+                <div class="swiper-slide">
+                    <div class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 transform transition duration-300 hover:scale-105">
+                        <img src="../media/pic_2.jpg" alt="Partner Image" class="w-full h-64 object-cover rounded-lg">
+                        <h3 class="text-lg font-semibold text-gray-800 my-2">Fali S. Nariman</h3>
+                        <p class="text-gray-600 mb-2">Indian jurist</p>
+                        <div class="text-blue-600">
+                            <a href="#" class="hover:underline">V-Card</a> |
+                            <a href="#" class="hover:underline">Email</a>
+                        </div>
                     </div>
                 </div>
-    
-                <!-- Partner Card 3 -->
-                <div class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 m-4 transform transition duration-300 hover:scale-105">
-                    <img src="../media/pic_3.jpg" alt="Partner Image" class="w-full h-64 object-cover rounded-lg">
-                    <h3 class="text-lg font-semibold text-gray-800 my-2">Ram Jethmalani</h3>
-                    <p class="text-gray-600 mb-2">Former Minister of Law and Justice of India</p>
-                    <div class="text-blue-600">
-                        <a href="#" class="hover:underline">V-Card</a> | 
-                        <a href="#" class="hover:underline">Email</a>
+                <!-- Add more cards similarly -->
+                <div class="swiper-slide">
+                    <div class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 transform transition duration-300 hover:scale-105">
+                        <img src="../media/pic_3.jpg" alt="Partner Image" class="w-full h-64 object-cover rounded-lg">
+                        <h3 class="text-lg font-semibold text-gray-800 my-2">Fali S. Nariman</h3>
+                        <p class="text-gray-600 mb-2">Indian jurist</p>
+                        <div class="text-blue-600">
+                            <a href="#" class="hover:underline">V-Card</a> |
+                            <a href="#" class="hover:underline">Email</a>
+                        </div>
                     </div>
                 </div>
-    
-                <!-- Partner Card 4 -->
-                <div class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 m-4 transform transition duration-300 hover:scale-105">
-                    <img src="../media/pic_4.jpg" alt="Partner Image" class="w-full h-64 object-cover rounded-lg">
-                    <h3 class="text-lg font-semibold text-gray-800 my-2">Nani Palkhivala</h3>
-                    <p class="text-gray-600 mb-2">Indian lawyer and jurist</p>
-                    <div class="text-blue-600">
-                        <a href="#" class="hover:underline">V-Card</a> | 
-                        <a href="#" class="hover:underline">Email</a>
+                <div class="swiper-slide">
+                    <div class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 transform transition duration-300 hover:scale-105">
+                        <img src="../media/pic_4.jpg" alt="Partner Image" class="w-full h-64 object-cover rounded-lg">
+                        <h3 class="text-lg font-semibold text-gray-800 my-2">Fali S. Nariman</h3>
+                        <p class="text-gray-600 mb-2">Indian jurist</p>
+                        <div class="text-blue-600">
+                            <a href="#" class="hover:underline">V-Card</a> |
+                            <a href="#" class="hover:underline">Email</a>
+                        </div>
                     </div>
                 </div>
-    
-                <!-- Partner Card 5 -->
-                <div class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 m-4 transform transition duration-300 hover:scale-105">
-                    <img src="../media/pic_5.jpg" alt="Partner Image" class="w-full h-64 object-cover rounded-lg">
-                    <h3 class="text-lg font-semibold text-gray-800 my-2">Harish Salve</h3>
-                    <p class="text-gray-600 mb-2">Former Solicitor General of India</p>
-                    <div class="text-blue-600">
-                        <a href="#" class="hover:underline">V-Card</a> | 
-                        <a href="#" class="hover:underline">Email</a>
+                <div class="swiper-slide">
+                    <div class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 transform transition duration-300 hover:scale-105">
+                        <img src="../media/pic_5.jpg" alt="Partner Image" class="w-full h-64 object-cover rounded-lg">
+                        <h3 class="text-lg font-semibold text-gray-800 my-2">Fali S. Nariman</h3>
+                        <p class="text-gray-600 mb-2">Indian jurist</p>
+                        <div class="text-blue-600">
+                            <a href="#" class="hover:underline">V-Card</a> |
+                            <a href="#" class="hover:underline">Email</a>
+                        </div>
                     </div>
                 </div>
-    
-                <!-- Partner Card 6 -->
-                <div class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 m-4 transform transition duration-300 hover:scale-105">
-                    <img src="../media/pic_6.jpg" alt="Partner Image" class="w-full h-64 object-cover rounded-lg">
-                    <h3 class="text-lg font-semibold text-gray-800 my-2">Gopal Subramanium</h3>
-                    <p class="text-gray-600 mb-2">Former Solicitor General of India</p>
-                    <div class="text-blue-600">
-                        <a href="#" class="hover:underline">V-Card</a> | 
-                        <a href="#" class="hover:underline">Email</a>
-                    </div>
-                </div>
-    
-                <!-- Additional partner cards with placeholder images -->
-                <div class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 m-4 transform transition duration-300 hover:scale-105">
-                    <img src="/api/placeholder/400/320" alt="Partner Image" class="w-full h-64 object-cover rounded-lg">
-                    <h3 class="text-lg font-semibold text-gray-800 my-2">ABC</h3>
-                    <p class="text-gray-600 mb-2">Partner</p>
-                    <div class="text-blue-600">
-                        <a href="#" class="hover:underline">V-Card</a> | 
-                        <a href="#" class="hover:underline">Email</a>
-                    </div>
-                </div>
+                <!-- Add more cards similarly -->
             </div>
+                <!-- Add more cards similarly -->
+            </div>
+                <!-- Add more cards similarly -->
+            </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </div>
+</div>
+
 
     <div class="p-4 mt-7 flex flex-col items-center">
         <h2 class="font-medium sm:text-3xl basker mb-4">CONTACT US</h2>
@@ -317,26 +312,63 @@
     </footer>
 
     <!-- Disclaimer Pop-Up -->
-    <div id="disclaimer-popup" class="popup">
-        <div class="popup-content basker">
+    
+    <div id="disclaimer-popup" class="popup p-6 space-y-6">
+        <div class="popup-content basker ">
             <h2><b>DISCLAIMER:</b></h2>
             <p>The Bar Council of India prohibits law firms from soliciting work or advertising in any form. By clicking 'I AGREE', the user acknowledges the following:</p>
-            <ul>
+            <ul class="space-y-3 list-disc pl-6">
                 <li>The user seeks more information about our firm, its practice areas, and attorneys solely for their own use.</li>
                 <li>This information is provided at the user's specific request, and any material obtained or downloaded from this website is done at the user's discretion. The transmission, receipt, or use of this site does not establish a lawyer-client relationship.</li>
                 <li>The content on this website does not constitute legal advice or opinion.</li>
             </ul>
             <p>Our firm is not responsible for any actions taken by the user based on the material/information provided on this website. Users with legal issues should seek independent legal counsel.</p>
-            <button id="agree-button">I Agree</button>
+            <button class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold 
+            hover:bg-blue-700 transition-colors duration-200 
+            focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2" id="agree-button">I Agree</button>
         </div>
     </div>
-
+    
     <script>
-function toggleSidebar() {
-    const sidebar = document.getElementById('sidebar');
-    sidebar.classList.toggle('-translate-x-full');
-}
-</script>
+        const swiper = new Swiper('.mySwiper', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3000, // Time in milliseconds between slide transitions
+                disableOnInteraction: false, // Continue autoplay even after user interaction
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+            },
+        });
+    </script>
+    
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('-translate-x-full');
+        }
+        </script>
     <script src="script.js"></script>
 </body>
 </html>

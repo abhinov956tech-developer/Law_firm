@@ -1,67 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Law Firm Website</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
+
 <body>
-    <div id="sidebar" class="fixed top-0 left-0 h-full w-72 bg-gray-900 text-gray-200 transform -translate-x-full transition-transform duration-300 ease-in-out shadow-2xl z-50 overflow-y-auto">
+    <div id="sidebar"
+        class="fixed top-0 left-0 h-full w-72 bg-gray-900 text-gray-200 transform -translate-x-full transition-transform duration-300 ease-in-out shadow-2xl z-50 overflow-y-auto">
         <div class="p-6 border-b border-gray-700">
             <button class="absolute top-6 right-6 text-gray-400 hover:text-white" onclick="toggleSidebar()">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                 </svg>
             </button>
             <img src="./LawLogo-removebg-preview.png" alt="Logo" class="h-12 mb-4">
         </div>
-        
+
         <nav class="px-4 py-6">
             <div class="space-y-4">
-                <a href="demo.html" class="block px-4 py-3 text-gray-300 hover:bg-gray-800 hover:text-amber-200 rounded-lg transition-all duration-200 font-serif">Home</a>
-                <a href="media.html"  class="block px-4 py-3 text-gray-300 hover:bg-gray-800 hover:text-amber-200 rounded-lg transition-all duration-200 font-serif">Media & Publication</a>
-                <a href="#practices" onclick="toggleSidebar()" class="block px-4 py-3 text-gray-300 hover:bg-gray-800 hover:text-amber-200 rounded-lg transition-all duration-200 font-serif">Practices</a>
-                <a href="#partners" onclick="toggleSidebar()" class="block px-4 py-3 text-gray-300 hover:bg-gray-800 hover:text-amber-200 rounded-lg transition-all duration-200 font-serif">Partners</a>
-                <a href="careers.html" class="block px-4 py-3 text-gray-300 hover:bg-gray-800 hover:text-amber-200 rounded-lg transition-all duration-200 font-serif">Careers</a>
-                <a href="contact.html" class="block px-4 py-3 text-gray-300 hover:bg-gray-800 hover:text-amber-200 rounded-lg transition-all duration-200 font-serif">Contact us</a>
-                <a href="#aboutus" onclick="toggleSidebar()" class="block px-4 py-3 text-gray-300 hover:bg-gray-800 hover:text-amber-200 rounded-lg transition-all duration-200 font-serif">About us</a>
+                <a href="demo.html"
+                    class="block px-4 py-3 text-gray-300 hover:bg-gray-800 hover:text-amber-200 rounded-lg transition-all duration-200 font-serif">Home</a>
+                <a href="media.html"
+                    class="block px-4 py-3 text-gray-300 hover:bg-gray-800 hover:text-amber-200 rounded-lg transition-all duration-200 font-serif">Media
+                    & Publication</a>
+                <a href="#practices" onclick="toggleSidebar()"
+                    class="block px-4 py-3 text-gray-300 hover:bg-gray-800 hover:text-amber-200 rounded-lg transition-all duration-200 font-serif">Practices</a>
+                <a href="#partners" onclick="toggleSidebar()"
+                    class="block px-4 py-3 text-gray-300 hover:bg-gray-800 hover:text-amber-200 rounded-lg transition-all duration-200 font-serif">Partners</a>
+                <a href="careers.html"
+                    class="block px-4 py-3 text-gray-300 hover:bg-gray-800 hover:text-amber-200 rounded-lg transition-all duration-200 font-serif">Careers</a>
+                <a href="contact.html"
+                    class="block px-4 py-3 text-gray-300 hover:bg-gray-800 hover:text-amber-200 rounded-lg transition-all duration-200 font-serif">Contact
+                    us</a>
+                <a href="#aboutus" onclick="toggleSidebar()"
+                    class="block px-4 py-3 text-gray-300 hover:bg-gray-800 hover:text-amber-200 rounded-lg transition-all duration-200 font-serif">About
+                    us</a>
             </div>
         </nav>
-    
+
         <div class="absolute bottom-0 left-0 right-0 p-6 border-t border-gray-700">
             <div class="flex items-center justify-center space-x-4">
                 <a href="#" class="text-gray-400 hover:text-white">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
+                    </svg>
                 </a>
                 <a href="#" class="text-gray-400 hover:text-white">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5 0-.278-.028-.556-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5 0-.278-.028-.556-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                    </svg>
                 </a>
                 <a href="#" class="text-gray-400 hover:text-white">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                    </svg>
                 </a>
             </div>
         </div>
     </div>
-      <header class="flex px-4 items-center fixed top-0 left-0 right-0 bg-white shadow-md z-40 h-16">
+    <header class="flex px-4 items-center fixed top-0 left-0 right-0 bg-white shadow-md z-40 h-16">
         <div class="flex-shrink-0">
             <image class="h-12 w-12 object-contain" src="./LawLogo-removebg-preview.png" alt="Logo"></image>
         </div>
         <nav class="hidden xl:block flex-grow">
             <ul class="flex text-xl basker gap-10 p-4 text-slate-950 justify-center">
-                <li><a href="demo.html" class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Home</a></li>
-                <li><a href="media.html" class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Media & Publication</a></li>
-                <li><a href="#practices" class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Practices</a></li>
-                <li><a href="partners" class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Partners</a></li>
-                <li><a href="careers.html" class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Careers</a></li>
-                <li><a href="contact.html" class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Contact us</a></li>
-                <li><a href="about.html" class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">About us</a></li>
+                <li><a href="demo.html"
+                        class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Home</a>
+                </li>
+                <li><a href="media.html"
+                        class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Media
+                        & Publication</a></li>
+                <li><a href="#practices"
+                        class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Practices</a>
+                </li>
+                <li><a href="partners.html"
+                        class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Partners</a>
+                </li>
+                <li><a href="careers.html"
+                        class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Careers</a>
+                </li>
+                <li><a href="contact.html"
+                        class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Contact
+                        us</a></li>
+                <li><a href="about.html"
+                        class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">About
+                        us</a></li>
             </ul>
         </nav>
         <button class="block xl:hidden ml-auto" onclick="toggleSidebar()">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8">
-                <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+                <path fill-rule="evenodd"
+                    d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+                    clip-rule="evenodd" />
             </svg>
         </button>
     </header>
@@ -71,203 +112,273 @@
             <div class="slider h-full flex transition-transform duration-700 ease-in-out">
                 <!-- Slide 1 -->
                 <div class="slide min-w-full h-full relative">
-                    <img src="https://wallpaperaccess.com/full/702871.jpg" class="w-full h-full object-cover" alt="Slide 1">
+                    <img src="https://wallpaperaccess.com/full/702871.jpg" class="w-full h-full object-cover"
+                        alt="Slide 1">
                     <div class="absolute inset-0 bg-black bg-opacity-50">
-                        <div class="basker h-full text-2xl md:text-4xl flex flex-col items-center justify-center text-amber-200 px-4">
+                        <div
+                            class="basker h-full text-2xl md:text-4xl flex flex-col items-center justify-center text-amber-200 px-4">
                             "Our goal is simple: justice for every client."
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Slide 2 -->
                 <div class="slide min-w-full h-full relative">
                     <img src="../media/pic_7.jpeg" class="w-full h-full object-cover" alt="Slide 2">
                     <div class="absolute inset-0 bg-black bg-opacity-50">
-                        <div class="basker h-full text-2xl md:text-4xl flex flex-col items-center justify-center text-amber-200 px-4">
+                        <div
+                            class="basker h-full text-2xl md:text-4xl flex flex-col items-center justify-center text-amber-200 px-4">
                             "Our goal is simple: justice for every client."
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Slide 3 -->
                 <div class="slide min-w-full h-full relative">
                     <img src="../media/pic_8.jpeg" class="w-full h-full object-cover" alt="Slide 3">
                     <div class="absolute inset-0 bg-black bg-opacity-50">
-                        <div class="basker h-full text-2xl md:text-4xl flex flex-col items-center justify-center text-amber-200 px-4">
+                        <div
+                            class="basker h-full text-2xl md:text-4xl flex flex-col items-center justify-center text-amber-200 px-4">
                             "Our goal is simple: justice for every client."
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <div id="aboutus" class="h-auto bg-white basker flex flex-col items-center mt-2 sm:mt-10 p-4 ">
             <div class="flex justify-center p-3 sm:text-4xl">WHO ARE WE</div>
             <div class="sm:w-4/5 text-sm sm:text-lg">
-                <p class="flex text-center mt-3 ">Established in 2008, our law firm stands as a premier full-service, multi-disciplinary firm in India, offering a comprehensive range of services including transactional, regulatory, advisory, dispute resolution, and tax assistance. Our main offices are situated in New Delhi and Mumbai, allowing us to serve a diverse range of clients, including local and international companies, banks, financial institutions, funds, promoter groups, and public sector entities.
-                    Driven by the goal to enhance client service and provide practical legal advice along with dedicated representation across all sectors, our firm has carved out a distinct identity. We handle complex domestic and international matters with significant depth and expertise.
-                    Our team of highly qualified and experienced lawyers bring a dynamic and collaborative approach to their work, united by shared values of delivering exceptional service, professionalism, and responsiveness.</p>
-                    <p class="flex text-center mt-2 ">
-                        Founded in 2008, Phoenix Legal is a leading full service/multi-disciplinary Indian law firm offering transactional, regulatory, advisory, dispute resolution, and tax services. With its principal offices in New Delhi and Mumbai, the firm advises a diverse clientele including domestic and international companies, banks and financial institutions, funds, promoter groups, and public sector undertakings.
-                    </p>
-                    <p class="mt-2 flex justify-center text-center">
-                        Set up with a desire to bring client service into sharper focus, to provide commercially viable legal advice and committed legal representation to our clients across all sectors; the firm has successfully been able to establish its identity outside its origins, dealing with significant depth in complex domestic and international matters.
-                    </p>
+                <p class="flex text-center mt-3 ">Established in 2008, our law firm stands as a premier full-service,
+                    multi-disciplinary firm in India, offering a comprehensive range of services including
+                    transactional, regulatory, advisory, dispute resolution, and tax assistance. Our main offices are
+                    situated in New Delhi and Mumbai, allowing us to serve a diverse range of clients, including local
+                    and international companies, banks, financial institutions, funds, promoter groups, and public
+                    sector entities.
+                    Driven by the goal to enhance client service and provide practical legal advice along with dedicated
+                    representation across all sectors, our firm has carved out a distinct identity. We handle complex
+                    domestic and international matters with significant depth and expertise.
+                    Our team of highly qualified and experienced lawyers bring a dynamic and collaborative approach to
+                    their work, united by shared values of delivering exceptional service, professionalism, and
+                    responsiveness.</p>
+                <p class="flex text-center mt-2 ">
+                    Founded in 2008, Phoenix Legal is a leading full service/multi-disciplinary Indian law firm offering
+                    transactional, regulatory, advisory, dispute resolution, and tax services. With its principal
+                    offices in New Delhi and Mumbai, the firm advises a diverse clientele including domestic and
+                    international companies, banks and financial institutions, funds, promoter groups, and public sector
+                    undertakings.
+                </p>
+                <p class="mt-2 flex justify-center text-center">
+                    Set up with a desire to bring client service into sharper focus, to provide commercially viable
+                    legal advice and committed legal representation to our clients across all sectors; the firm has
+                    successfully been able to establish its identity outside its origins, dealing with significant depth
+                    in complex domestic and international matters.
+                </p>
             </div>
         </div>
 
-    <section class="h-auto mt-10 p-4 bg-slate-200">
-        <h2 class="text-center text-3xl basker">Media & Publications</h2>
-        <p>Stay updated with our latest media releases and publications.</p>
-    </section>
+        <section class="h-auto mt-10 p-4 bg-slate-200">
+            <h2 class="text-center text-3xl basker">Media & Publications</h2>
+            <p>Stay updated with our latest media releases and publications.</p>
+        </section>
 
-    <div id="practices" class="h-auto lg:h-[70vh] ">
-        <div class="flex justify-center">
-            <div class="container mt-5 sm:mt-10 px-6">
-                <h1 class="text-center basker sm:text-2xl md:text-3xl font-normal  border-b-2 border-gray-700 pb-4 mb-8">OUR PRACTICES</h1>
-                <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-                    <!-- Practice Card -->
-                    <div class="bg-white basker border border-gray-300 rounded-lg shadow-md p-6 transition-transform transform hover:scale-105">
-                        <div class="text-4xl flex justify-center mb-4">&#128188;</div>
-                        <div class="text-xl font-semibold mb-2 text-gray-700 flex justify-center">Banking and Finance</div>
-                        <div class="text-gray-600 border-y py-2 text-sm mb-4 flex text-center justify-center">Banking and finance is one of our core and highly recognized areas of expertise.</div>
-                        <a href="#" class="text-blue-600 flex text-center justify-center w-full text-centers py-2 hover:underline">READ MORE &rarr;</a>
-                    </div>
-                    <!-- Repeat for each practice -->
-                    <div class="bg-white border basker border-gray-300 rounded-lg shadow-md p-6 transition-transform transform hover:scale-105">
-                        <div class="text-4xl flex justify-center mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z" />
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z" />
-                            </svg>
+        <div id="practices" class="h-auto lg:h-[70vh] ">
+            <div class="flex justify-center">
+                <div class="container mt-5 sm:mt-10 px-6">
+                    <h1
+                        class="text-center basker sm:text-2xl md:text-3xl font-normal  border-b-2 border-gray-700 pb-4 mb-8">
+                        OUR PRACTICES</h1>
+                    <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+                        <!-- Practice Card -->
+                        <div
+                            class="bg-white basker border border-gray-300 rounded-lg shadow-md p-6 transition-transform transform hover:scale-105">
+                            <div class="text-4xl flex justify-center mb-4">&#128188;</div>
+                            <div class="text-xl font-semibold mb-2 text-gray-700 flex justify-center">Banking and
+                                Finance</div>
+                            <div class="text-gray-600 border-y py-2 text-sm mb-4 flex text-center justify-center">
+                                Banking and finance is one of our core and highly recognized areas of expertise.</div>
+                            <a href="#"
+                                class="text-blue-600 flex text-center justify-center w-full text-centers py-2 hover:underline">READ
+                                MORE &rarr;</a>
                         </div>
-                        <h3 class="text-xl font-semibold mb-2 text-gray-700 flex justify-center">Corporate Commercial</h3>
-                        <p class="text-gray-600 border-y py-2 text-sm mb-4 flex text-center justify-center">Our key practice area includes corporate and commercial law, spanning various sectors.</p>
-                        <a href="#" class="text-blue-600 flex text-center justify-center w-full text-centers py-2 hover:underline">READ MORE &rarr;</a>
-                    </div>
-                    <!-- Add other cards similarly -->
-                    <div class="bg-white border basker border-gray-300 rounded-lg shadow-md p-6 transition-transform transform hover:scale-105">
-                        <div class="text-4xl flex justify-center mb-4">&#128104;&#8205;&#128104;&#8205;&#128104;</div>
-                        <h3 class="ttext-xl font-semibold mb-2 text-gray-700 flex justify-center">Dispute Resolution</h3>
-                        <p class="text-gray-600 border-y py-2 text-sm mb-4 flex text-center justify-center">We operate in virtually every area of dispute resolution with significant expertise.</p>
-                        <a href="#" class="text-blue-600 flex text-center justify-center w-full text-centers py-2 hover:underline">READ MORE &rarr;</a>
-                    </div>
-                    <div class="bg-white border basker border-gray-300 rounded-lg shadow-md p-6 transition-transform transform hover:scale-105">
-                        <div class="text-4xl flex justify-center mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-10">
-                                <path fill-rule="evenodd" d="M11.484 2.17a.75.75 0 0 1 1.032 0 11.209 11.209 0 0 0 7.877 3.08.75.75 0 0 1 .722.515 12.74 12.74 0 0 1 .635 3.985c0 5.942-4.064 10.933-9.563 12.348a.749.749 0 0 1-.374 0C6.314 20.683 2.25 15.692 2.25 9.75c0-1.39.223-2.73.635-3.985a.75.75 0 0 1 .722-.516l.143.001c2.996 0 5.718-1.17 7.734-3.08ZM12 8.25a.75.75 0 0 1 .75.75v3.75a.75.75 0 0 1-1.5 0V9a.75.75 0 0 1 .75-.75ZM12 15a.75.75 0 0 0-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 0 0 .75-.75v-.008a.75.75 0 0 0-.75-.75H12Z" clip-rule="evenodd" />
-                              </svg>
+                        <!-- Repeat for each practice -->
+                        <div
+                            class="bg-white border basker border-gray-300 rounded-lg shadow-md p-6 transition-transform transform hover:scale-105">
+                            <div class="text-4xl flex justify-center mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2 text-gray-700 flex justify-center">Corporate
+                                Commercial</h3>
+                            <p class="text-gray-600 border-y py-2 text-sm mb-4 flex text-center justify-center">Our key
+                                practice area includes corporate and commercial law, spanning various sectors.</p>
+                            <a href="#"
+                                class="text-blue-600 flex text-center justify-center w-full text-centers py-2 hover:underline">READ
+                                MORE &rarr;</a>
                         </div>
-                        <h3 class="text-xl font-semibold mb-2 text-gray-700 flex justify-center">Insurance</h3>
-                        <p class="text-gray-600 border-y py-2 text-sm mb-4 flex text-center justify-center">Our insurance practice is a market leader, advising clients on a wide range of matters.</p>
-                        <a href="#" class="text-blue-600 flex text-center justify-center w-full text-centers py-2 hover:underline">READ MORE &rarr;</a>
-                    </div>
-                    <div class="bg-white border border-gray-300 rounded-lg shadow-md p-6 transition-transform transform hover:scale-105">
-                        <div class="text-4xl flex justify-center mb-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
-                          </svg>
+                        <!-- Add other cards similarly -->
+                        <div
+                            class="bg-white border basker border-gray-300 rounded-lg shadow-md p-6 transition-transform transform hover:scale-105">
+                            <div class="text-4xl flex justify-center mb-4">&#128104;&#8205;&#128104;&#8205;&#128104;
+                            </div>
+                            <h3 class="ttext-xl font-semibold mb-2 text-gray-700 flex justify-center">Dispute Resolution
+                            </h3>
+                            <p class="text-gray-600 border-y py-2 text-sm mb-4 flex text-center justify-center">We
+                                operate in virtually every area of dispute resolution with significant expertise.</p>
+                            <a href="#"
+                                class="text-blue-600 flex text-center justify-center w-full text-centers py-2 hover:underline">READ
+                                MORE &rarr;</a>
                         </div>
-                        <h3 class="text-xl font-semibold basker mb-2 text-gray-700 flex justify-center">Energy, Oil and Gas</h3>
-                        <p class="text-gray-600 border-y py-2 text-sm mb-4 flex text-center justify-center">We have significant experience and expertise in the Energy, Oil & Gas sector.</p>
-                        <a href="#" class="text-blue-600 flex text-center justify-center w-full text-centers py-2 hover:underline">READ MORE &rarr;</a>
-                    </div>
-                    <div class="bg-white border basker border-gray-300 rounded-lg shadow-md p-6 transition-transform transform hover:scale-105">
-                        <div class="text-4xl flex justify-center mb-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-10">
-                            <path d="M19.006 3.705a.75.75 0 1 0-.512-1.41L6 6.838V3a.75.75 0 0 0-.75-.75h-1.5A.75.75 0 0 0 3 3v4.93l-1.006.365a.75.75 0 0 0 .512 1.41l16.5-6Z" />
-                            <path fill-rule="evenodd" d="M3.019 11.114 18 5.667v3.421l4.006 1.457a.75.75 0 1 1-.512 1.41l-.494-.18v8.475h.75a.75.75 0 0 1 0 1.5H2.25a.75.75 0 0 1 0-1.5H3v-9.129l.019-.007ZM18 20.25v-9.566l1.5.546v9.02H18Zm-9-6a.75.75 0 0 0-.75.75v4.5c0 .414.336.75.75.75h3a.75.75 0 0 0 .75-.75V15a.75.75 0 0 0-.75-.75H9Z" clip-rule="evenodd" />
-                          </svg>
+                        <div
+                            class="bg-white border basker border-gray-300 rounded-lg shadow-md p-6 transition-transform transform hover:scale-105">
+                            <div class="text-4xl flex justify-center mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="size-10">
+                                    <path fill-rule="evenodd"
+                                        d="M11.484 2.17a.75.75 0 0 1 1.032 0 11.209 11.209 0 0 0 7.877 3.08.75.75 0 0 1 .722.515 12.74 12.74 0 0 1 .635 3.985c0 5.942-4.064 10.933-9.563 12.348a.749.749 0 0 1-.374 0C6.314 20.683 2.25 15.692 2.25 9.75c0-1.39.223-2.73.635-3.985a.75.75 0 0 1 .722-.516l.143.001c2.996 0 5.718-1.17 7.734-3.08ZM12 8.25a.75.75 0 0 1 .75.75v3.75a.75.75 0 0 1-1.5 0V9a.75.75 0 0 1 .75-.75ZM12 15a.75.75 0 0 0-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 0 0 .75-.75v-.008a.75.75 0 0 0-.75-.75H12Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2 text-gray-700 flex justify-center">Insurance</h3>
+                            <p class="text-gray-600 border-y py-2 text-sm mb-4 flex text-center justify-center">Our
+                                insurance practice is a market leader, advising clients on a wide range of matters.</p>
+                            <a href="#"
+                                class="text-blue-600 flex text-center justify-center w-full text-centers py-2 hover:underline">READ
+                                MORE &rarr;</a>
                         </div>
-                        <h3 class="text-xl font-semibold mb-2 text-gray-700 flex justify-center">Real Estate</h3>
-                        <p class="text-gray-600 border-y py-2 text-sm mb-4 flex text-center justify-center">We advise clients on increasingly diverse and complex real estate matters.</p>
-                        <a href="#" class="text-blue-600 flex text-center justify-center w-full text-centers py-2 hover:underline">READ MORE &rarr;</a>
+                        <div
+                            class="bg-white border border-gray-300 rounded-lg shadow-md p-6 transition-transform transform hover:scale-105">
+                            <div class="text-4xl flex justify-center mb-4"><svg xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold basker mb-2 text-gray-700 flex justify-center">Energy, Oil
+                                and Gas</h3>
+                            <p class="text-gray-600 border-y py-2 text-sm mb-4 flex text-center justify-center">We have
+                                significant experience and expertise in the Energy, Oil & Gas sector.</p>
+                            <a href="#"
+                                class="text-blue-600 flex text-center justify-center w-full text-centers py-2 hover:underline">READ
+                                MORE &rarr;</a>
+                        </div>
+                        <div
+                            class="bg-white border basker border-gray-300 rounded-lg shadow-md p-6 transition-transform transform hover:scale-105">
+                            <div class="text-4xl flex justify-center mb-4"><svg xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24" fill="currentColor" class="size-10">
+                                    <path
+                                        d="M19.006 3.705a.75.75 0 1 0-.512-1.41L6 6.838V3a.75.75 0 0 0-.75-.75h-1.5A.75.75 0 0 0 3 3v4.93l-1.006.365a.75.75 0 0 0 .512 1.41l16.5-6Z" />
+                                    <path fill-rule="evenodd"
+                                        d="M3.019 11.114 18 5.667v3.421l4.006 1.457a.75.75 0 1 1-.512 1.41l-.494-.18v8.475h.75a.75.75 0 0 1 0 1.5H2.25a.75.75 0 0 1 0-1.5H3v-9.129l.019-.007ZM18 20.25v-9.566l1.5.546v9.02H18Zm-9-6a.75.75 0 0 0-.75.75v4.5c0 .414.336.75.75.75h3a.75.75 0 0 0 .75-.75V15a.75.75 0 0 0-.75-.75H9Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2 text-gray-700 flex justify-center">Real Estate</h3>
+                            <p class="text-gray-600 border-y py-2 text-sm mb-4 flex text-center justify-center">We
+                                advise clients on increasingly diverse and complex real estate matters.</p>
+                            <a href="#"
+                                class="text-blue-600 flex text-center justify-center w-full text-centers py-2 hover:underline">READ
+                                MORE &rarr;</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div id="partners" class="h-auto bg-slate-900">
+            <div class="container mx-auto w-4/5 pb-12 basker my-20">
+                <h1 class="text-2xl font-bold border-b-2 mt-8 text-slate-200 border-slate-200 pb-2 mb-8 text-center">OUR
+                    PARTNERS</h1>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <!-- Partner Card 1 -->
+                        <div class="swiper-slide">
+                            <div
+                                class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 transform transition duration-300 hover:scale-105">
+                                <img src="../media/pic_1.jpg" alt="Partner Image"
+                                    class="w-full h-64 object-cover rounded-lg">
+                                <h3 class="text-lg font-semibold text-gray-800 my-2">J Sai Deepak</h3>
+                                <p class="text-gray-600 mb-2">Indian lawyer and columnist</p>
+                                <div class="text-blue-600">
+                                    <a href="#" class="hover:underline">V-Card</a> |
+                                    <a href="#" class="hover:underline">Email</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Repeat for other partner cards -->
+                        <!-- Partner Card 2 -->
+                        <div class="swiper-slide">
+                            <div
+                                class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 transform transition duration-300 hover:scale-105">
+                                <img src="../media/pic_2.jpg" alt="Partner Image"
+                                    class="w-full h-64 object-cover rounded-lg">
+                                <h3 class="text-lg font-semibold text-gray-800 my-2">Fali S. Nariman</h3>
+                                <p class="text-gray-600 mb-2">Indian jurist</p>
+                                <div class="text-blue-600">
+                                    <a href="#" class="hover:underline">V-Card</a> |
+                                    <a href="#" class="hover:underline">Email</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more cards similarly -->
+                        <div class="swiper-slide">
+                            <div
+                                class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 transform transition duration-300 hover:scale-105">
+                                <img src="../media/pic_3.jpg" alt="Partner Image"
+                                    class="w-full h-64 object-cover rounded-lg">
+                                <h3 class="text-lg font-semibold text-gray-800 my-2">Fali S. Nariman</h3>
+                                <p class="text-gray-600 mb-2">Indian jurist</p>
+                                <div class="text-blue-600">
+                                    <a href="#" class="hover:underline">V-Card</a> |
+                                    <a href="#" class="hover:underline">Email</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 transform transition duration-300 hover:scale-105">
+                                <img src="../media/pic_4.jpg" alt="Partner Image"
+                                    class="w-full h-64 object-cover rounded-lg">
+                                <h3 class="text-lg font-semibold text-gray-800 my-2">Fali S. Nariman</h3>
+                                <p class="text-gray-600 mb-2">Indian jurist</p>
+                                <div class="text-blue-600">
+                                    <a href="#" class="hover:underline">V-Card</a> |
+                                    <a href="#" class="hover:underline">Email</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 transform transition duration-300 hover:scale-105">
+                                <img src="../media/pic_5.jpg" alt="Partner Image"
+                                    class="w-full h-64 object-cover rounded-lg">
+                                <h3 class="text-lg font-semibold text-gray-800 my-2">Fali S. Nariman</h3>
+                                <p class="text-gray-600 mb-2">Indian jurist</p>
+                                <div class="text-blue-600">
+                                    <a href="#" class="hover:underline">V-Card</a> |
+                                    <a href="#" class="hover:underline">Email</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more cards similarly -->
+                    </div>
+                    <!-- Add more cards similarly -->
+                </div>
+                <!-- Add more cards similarly -->
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
     </div>
-
-    <div id="partners" class="h-auto bg-slate-200 ">
-        <div class="container mx-auto w-4/5 basker my-20">
-            <h1 class="text-2xl font-bold border-b-2 border-gray-800 pb-2 mb-8 text-center">OUR PARTNERS</h1>
-            <div class="flex flex-wrap justify-around">
-                <!-- Partner Card 1 -->
-                <div class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 m-4 transform transition duration-300 hover:scale-105">
-                    <img src="../media/pic_1.jpg" alt="Partner Image" class="w-full h-64 object-cover rounded-lg">
-                    <h3 class="text-lg font-semibold text-gray-800 my-2">J sai deepak</h3>
-                    <p class="text-gray-600 mb-2">Indian lawyer and columnist</p>
-                    <div class="text-blue-600">
-                        <a href="#" class="hover:underline">V-Card</a> | 
-                        <a href="#" class="hover:underline">Email</a>
-                    </div>
-                </div>
-    
-                <!-- Partner Card 2 -->
-                <div class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 m-4 transform transition duration-300 hover:scale-105">
-                    <img src="../media/pic_2.jpg" alt="Partner Image" class="w-full h-64 object-cover rounded-lg">
-                    <h3 class="text-lg font-semibold text-gray-800 my-2">Fali S. Nariman</h3>
-                    <p class="text-gray-600 mb-2">Indian jurist</p>
-                    <div class="text-blue-600">
-                        <a href="#" class="hover:underline">V-Card</a> | 
-                        <a href="#" class="hover:underline">Email</a>
-                    </div>
-                </div>
-    
-                <!-- Partner Card 3 -->
-                <div class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 m-4 transform transition duration-300 hover:scale-105">
-                    <img src="../media/pic_3.jpg" alt="Partner Image" class="w-full h-64 object-cover rounded-lg">
-                    <h3 class="text-lg font-semibold text-gray-800 my-2">Ram Jethmalani</h3>
-                    <p class="text-gray-600 mb-2">Former Minister of Law and Justice of India</p>
-                    <div class="text-blue-600">
-                        <a href="#" class="hover:underline">V-Card</a> | 
-                        <a href="#" class="hover:underline">Email</a>
-                    </div>
-                </div>
-    
-                <!-- Partner Card 4 -->
-                <div class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 m-4 transform transition duration-300 hover:scale-105">
-                    <img src="../media/pic_4.jpg" alt="Partner Image" class="w-full h-64 object-cover rounded-lg">
-                    <h3 class="text-lg font-semibold text-gray-800 my-2">Nani Palkhivala</h3>
-                    <p class="text-gray-600 mb-2">Indian lawyer and jurist</p>
-                    <div class="text-blue-600">
-                        <a href="#" class="hover:underline">V-Card</a> | 
-                        <a href="#" class="hover:underline">Email</a>
-                    </div>
-                </div>
-    
-                <!-- Partner Card 5 -->
-                <div class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 m-4 transform transition duration-300 hover:scale-105">
-                    <img src="../media/pic_5.jpg" alt="Partner Image" class="w-full h-64 object-cover rounded-lg">
-                    <h3 class="text-lg font-semibold text-gray-800 my-2">Harish Salve</h3>
-                    <p class="text-gray-600 mb-2">Former Solicitor General of India</p>
-                    <div class="text-blue-600">
-                        <a href="#" class="hover:underline">V-Card</a> | 
-                        <a href="#" class="hover:underline">Email</a>
-                    </div>
-                </div>
-    
-                <!-- Partner Card 6 -->
-                <div class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 m-4 transform transition duration-300 hover:scale-105">
-                    <img src="../media/pic_6.jpg" alt="Partner Image" class="w-full h-64 object-cover rounded-lg">
-                    <h3 class="text-lg font-semibold text-gray-800 my-2">Gopal Subramanium</h3>
-                    <p class="text-gray-600 mb-2">Former Solicitor General of India</p>
-                    <div class="text-blue-600">
-                        <a href="#" class="hover:underline">V-Card</a> | 
-                        <a href="#" class="hover:underline">Email</a>
-                    </div>
-                </div>
-    
-                <!-- Additional partner cards with placeholder images -->
-                <div class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 m-4 transform transition duration-300 hover:scale-105">
-                    <img src="/api/placeholder/400/320" alt="Partner Image" class="w-full h-64 object-cover rounded-lg">
-                    <h3 class="text-lg font-semibold text-gray-800 my-2">ABC</h3>
-                    <p class="text-gray-600 mb-2">Partner</p>
-                    <div class="text-blue-600">
-                        <a href="#" class="hover:underline">V-Card</a> | 
-                        <a href="#" class="hover:underline">Email</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
     </div>
 
     <div class="p-4 mt-7 flex flex-col items-center">
@@ -306,7 +417,9 @@
                     <textarea id="message" name="message" placeholder="Enter your message"></textarea>
                 </div>
                 <div class="flex justify-center">
-                    <button type="submit" class="px-8 py-2 bg-black text-white text-sm sm:text-lg font-normal border-none rounded-md cursor-pointer transition duration-300 ease-in-out hover:bg-gray-700">Submit</button></div>
+                    <button type="submit"
+                        class="px-8 py-2 bg-black text-white text-sm sm:text-lg font-normal border-none rounded-md cursor-pointer transition duration-300 ease-in-out hover:bg-gray-700">Submit</button>
+                </div>
             </form>
         </div>
     </div>
@@ -328,32 +441,69 @@
     </footer>
 
     <!-- Disclaimer Pop-Up -->
-    
+
     <div id="disclaimer-popup" class="popup p-6 space-y-6">
         <div class="popup-content basker ">
             <h2><b>DISCLAIMER:</b></h2>
-            <p>The Bar Council of India prohibits law firms from soliciting work or advertising in any form. By clicking 'I AGREE', the user acknowledges the following:</p>
+            <p>The Bar Council of India prohibits law firms from soliciting work or advertising in any form. By clicking
+                'I AGREE', the user acknowledges the following:</p>
             <ul class="space-y-3 list-disc pl-6">
-                <li>The user seeks more information about our firm, its practice areas, and attorneys solely for their own use.</li>
-                <li>This information is provided at the user's specific request, and any material obtained or downloaded from this website is done at the user's discretion. The transmission, receipt, or use of this site does not establish a lawyer-client relationship.</li>
+                <li>The user seeks more information about our firm, its practice areas, and attorneys solely for their
+                    own use.</li>
+                <li>This information is provided at the user's specific request, and any material obtained or downloaded
+                    from this website is done at the user's discretion. The transmission, receipt, or use of this site
+                    does not establish a lawyer-client relationship.</li>
                 <li>The content on this website does not constitute legal advice or opinion.</li>
             </ul>
-            <p>Our firm is not responsible for any actions taken by the user based on the material/information provided on this website. Users with legal issues should seek independent legal counsel.</p>
+            <p>Our firm is not responsible for any actions taken by the user based on the material/information provided
+                on this website. Users with legal issues should seek independent legal counsel.</p>
             <button class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold 
             hover:bg-blue-700 transition-colors duration-200 
             focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2" id="agree-button">I Agree</button>
         </div>
     </div>
-    
-    
+
+    <script>
+        const swiper = new Swiper('.mySwiper', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3000, // Time in milliseconds between slide transitions
+                disableOnInteraction: false, // Continue autoplay even after user interaction
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+            },
+        });
+    </script>
 
     <script>
         function toggleSidebar() {
             const sidebar = document.getElementById('sidebar');
             sidebar.classList.toggle('-translate-x-full');
         }
-        </script>
+    </script>
     <script src="script.js"></script>
 </body>
-</html>
 
+</html>
