@@ -3,136 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css">
-    <style>
-        .swiper {
-            padding: 20px 0;
-            margin: 0 auto;
-        }
-        .partner-links {
-            display: flex;
-            gap: 1rem;
-        }
-        .swiper-slide {
-            display: flex;
-            justify-content: center;
-        }
-        @media (min-width: 640px) {
-            .swiper-wrapper {
-                gap: 2rem;
-            }
-        }
-    </style>
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
     <div id="partners" class="h-auto bg-slate-200">
-        <div class="container mx-auto w-4/5 pb-12 basker my-20">
+        <div class="container mx-auto w-full pb-12 basker my-20">
             <h1 class="text-2xl font-bold border-b-2 mt-8 border-slate-200 pb-2 mb-8 text-center">OUR PARTNERS</h1>
-            
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                        <!-- Partner Card 1 -->
-                        <div class="swiper-slide">
-                            <div class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 transform transition duration-300 hover:scale-105">
-                                <img src="../media/pic_1.jpg" alt="Partner Image" class="w-full h-64 object-cover rounded-lg">
-                                <h3 class="text-lg font-semibold text-gray-800 my-2">J Sai Deepak</h3>
-                                <p class="text-gray-600 mb-2">Indian lawyer and columnist</p>
-                                <div class=" partner-links text-blue-600">
-                                    <a href="#" >V-Card</a> 
-                                    <a href="#" >Email</a>
-                                </div>
+                    <!-- Partner Card 1 -->
+                    <div class="swiper-slide flex justify-center">
+                        <div class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 transform transition duration-300 hover:scale-105">
+                            <img src="../media/pic_1.jpg" alt="Partner Image" class="w-full h-64 object-cover rounded-lg">
+                            <h3 class="text-lg font-semibold text-gray-800 my-2">J Sai Deepak</h3>
+                            <p class="text-gray-600 mb-2">Indian lawyer and columnist</p>
+                            <div class=" partner-links text-blue-600">
+                                <a href="#" >V-Card</a> 
+                                <a href="#" >Email</a>
                             </div>
                         </div>
-                        <!-- Partner Card 2 -->
-                        <div class="swiper-slide">
-                            <div class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 transform transition duration-300 hover:scale-105">
-                                <img src="../media/pic_2.jpg" alt="Partner Image" class="w-full h-64 object-cover rounded-lg">
-                                <h3 class="text-lg font-semibold text-gray-800 my-2">Fali S. Nariman</h3>
-                                <p class="text-gray-600 mb-2">Indian jurist</p>
-                                <div class="partner-links text-blue-600">
-                                    <a href="#" >V-Card</a> 
-                                    <a href="#" >Email</a>
-                                </div>
+                    </div>
+                    <!-- Partner Card 2 -->
+                    <div class="swiper-slide flex justify-center">
+                        <div class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 transform transition duration-300 hover:scale-105">
+                            <img src="../media/pic_2.jpg" alt="Partner Image" class="w-full h-64 object-cover rounded-lg">
+                            <h3 class="text-lg font-semibold text-gray-800 my-2">Fali S. Nariman</h3>
+                            <p class="text-gray-600 mb-2">Indian jurist</p>
+                            <div class="partner-links text-blue-600">
+                                <a href="#" >V-Card</a> 
+                                <a href="#" >Email</a>
                             </div>
                         </div>
-                        <!-- Partner Card 3 -->
-                        <div class="swiper-slide">
-                            <div class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 transform transition duration-300 hover:scale-105">
-                                <img src="../media/pic_3.jpg" alt="Partner Image" class="w-full h-64 object-cover rounded-lg">
-                                <h3 class="text-lg font-semibold text-gray-800 my-2">Rohinton Fali Nariman</h3>
-                                <p class="text-gray-600 mb-2">Indian jurist and former judge</p>
-                                <div class=" partner-links text-blue-600">
-                                    <a href="#" >V-Card</a> 
-                                    <a href="#" >Email</a>
-                                </div>
+                    </div>
+                    <!-- Partner Card 3 -->
+                    <div class="swiper-slide flex justify-center">
+                        <div class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 transform transition duration-300 hover:scale-105">
+                            <img src="../media/pic_3.jpg" alt="Partner Image" class="w-full h-64 object-cover rounded-lg">
+                            <h3 class="text-lg font-semibold text-gray-800 my-2">Rohinton Fali Nariman</h3>
+                            <p class="text-gray-600 mb-2">Indian jurist and former judge</p>
+                            <div class=" partner-links text-blue-600">
+                                <a href="#" >V-Card</a> 
+                                <a href="#" >Email</a>
                             </div>
                         </div>
-                        <!-- Partner Card 4 -->
-                        <div class="swiper-slide">
-                            <div class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 transform transition duration-300 hover:scale-105">
-                                <img src="../media/pic_4.jpg" alt="Partner Image" class="w-full h-64 object-cover rounded-lg">
-                                <h3 class="text-lg font-semibold text-gray-800 my-2">Indu Malhotra</h3>
-                                <p class="text-gray-600 mb-2">Former judge of the Supreme Court</p>
-                                <div class="partner-links text-blue-600">
-                                    <a href="#" >V-Card</a> 
-                                    <a href="#" >Email</a>
-                                </div>
+                    </div>
+                    <!-- Partner Card 4 -->
+                    <div class="swiper-slide flex justify-center">
+                        <div class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 transform transition duration-300 hover:scale-105">
+                            <img src="../media/pic_4.jpg" alt="Partner Image" class="w-full h-64 object-cover rounded-lg">
+                            <h3 class="text-lg font-semibold text-gray-800 my-2">Indu Malhotra</h3>
+                            <p class="text-gray-600 mb-2">Former judge of the Supreme Court</p>
+                            <div class="partner-links text-blue-600">
+                                <a href="#" >V-Card</a> 
+                                <a href="#" >Email</a>
                             </div>
                         </div>
-                        <!-- Partner Card 5 -->
-                        <div class="swiper-slide">
-                            <div class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 transform transition duration-300 hover:scale-105">
-                                <img src="../media/pic_5.jpg" alt="Partner Image" class="w-full h-64 object-cover rounded-lg">
-                                <h3 class="text-lg font-semibold text-gray-800 my-2">Y. V. Chandrachud</h3>
-                                <p class="text-gray-600 mb-2">Former Chief Justice of</p>
-                                <div class="partner-links text-blue-600">
-                                    <a href="#" >V-Card</a> 
-                                    <a href="#" >Email</a>
-                                </div>
+                    </div>
+                    <!-- Partner Card 5 -->
+                    <div class="swiper-slide flex justify-center">
+                        <div class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 transform transition duration-300 hover:scale-105">
+                            <img src="../media/pic_5.jpg" alt="Partner Image" class="w-full h-64 object-cover rounded-lg">
+                            <h3 class="text-lg font-semibold text-gray-800 my-2">Y. V. Chandrachud</h3>
+                            <p class="text-gray-600 mb-2">Former Chief Justice of</p>
+                            <div class="partner-links text-blue-600">
+                                <a href="#" >V-Card</a> 
+                                <a href="#" >Email</a>
                             </div>
-                        </div><!-- Partner cards remain the same -->
+                        </div>
+                    </div>
+                    <!-- Add more partner cards as needed -->
                 </div>
-                <div class="swiper-pagination mt-6"></div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
             </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
     <script>
-        new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            centeredSlides: true,
-            loop: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true
+        const heroSwiper = new Swiper('.hero-swiper', {
+            loop: true, // Optional: Enables infinite loop
+            autoplay: {
+                delay: 5000, // Autoplay delay in milliseconds
+                disableOnInteraction: false, // Keeps autoplay active after interaction
             },
+            navigation: false,pagination: {
+                el: '.swiper-pagination',
+                clickable: false,
+            }, // No navigation arrows
+        });
+        const swiper = new Swiper('.mySwiper', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
             navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev"
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3000, // Time in milliseconds between slide transitions
+                disableOnInteraction: false, // Continue autoplay even after user interaction
             },
             breakpoints: {
                 640: {
                     slidesPerView: 2,
-                    spaceBetween: 40,
-                    centeredSlides: false
+                    spaceBetween: 20,
                 },
                 768: {
                     slidesPerView: 3,
-                    spaceBetween: 50,
-                    centeredSlides: false
+                    spaceBetween: 30,
                 },
                 1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 60,
-                    centeredSlides: false
-                }
-            }
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+            },
         });
     </script>
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('-translate-x-full');
+        }
+    </script>
+    <script src="script.js"></script>
 </body>
 </html>
