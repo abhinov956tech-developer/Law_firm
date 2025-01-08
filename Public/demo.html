@@ -9,6 +9,38 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <style>
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #1e40af !important;
+        }
+        
+        .swiper-pagination-bullet-active {
+            background: #1e40af !important;
+        }
+        
+        .partner-links {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .partner-links a:hover {
+            text-decoration: underline;
+        }
+        
+        #modal-backdrop {
+            z-index: 1000;
+        }
+        
+        #disclaimer-popup {
+            z-index: 1001;
+        }
+        
+        .partners-section {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
 </head>
 
 <body>
@@ -75,13 +107,27 @@
         </div>
         <nav class="hidden xl:block flex-grow">
             <ul class="flex text-xl basker gap-10 p-4 text-slate-950 justify-center">
-                <li><a href="demo.html" class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Home</a></li>
-                <li><a href="media.html" class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Media & Publication</a></li>
-                <li><a href="#practices" class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Practices</a></li>
-                <li><a href="partners.html" class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Partners</a></li>
-                <li><a href="careers.html" class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Careers</a></li>
-                <li><a href="contact.html" class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Contact us</a></li>
-                <li><a href="about.html" class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">About us</a></li>
+                <li><a href="demo.html"
+                        class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Home</a>
+                </li>
+                <li><a href="media.html"
+                        class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Media
+                        & Publication</a></li>
+                <li><a href="#practices"
+                        class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Practices</a>
+                </li>
+                <li><a href="partners.html"
+                        class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Partners</a>
+                </li>
+                <li><a href="careers.html"
+                        class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Careers</a>
+                </li>
+                <li><a href="contact.html"
+                        class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">Contact
+                        us</a></li>
+                <li><a href="about.html"
+                        class="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-950 after:transition-transform after:duration-300 hover:after:scale-x-100">About
+                        us</a></li>
             </ul>
         </nav>
         <button class="block xl:hidden ml-auto" onclick="toggleSidebar()">
@@ -283,7 +329,7 @@
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <!-- Partner Card 1 -->
-                        <div class="swiper-slide">
+                        <div class="swiper-slide flex justify-center">
                             <div class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 transform transition duration-300 hover:scale-105">
                                 <img src="../media/pic_1.jpg" alt="Partner Image" class="w-full h-64 object-cover rounded-lg">
                                 <h3 class="text-lg font-semibold text-gray-800 my-2">J Sai Deepak</h3>
@@ -295,7 +341,7 @@
                             </div>
                         </div>
                         <!-- Partner Card 2 -->
-                        <div class="swiper-slide">
+                        <div class="swiper-slide flex justify-center">
                             <div class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 transform transition duration-300 hover:scale-105">
                                 <img src="../media/pic_2.jpg" alt="Partner Image" class="w-full h-64 object-cover rounded-lg">
                                 <h3 class="text-lg font-semibold text-gray-800 my-2">Fali S. Nariman</h3>
@@ -307,7 +353,7 @@
                             </div>
                         </div>
                         <!-- Partner Card 3 -->
-                        <div class="swiper-slide">
+                        <div class="swiper-slide flex justify-center">
                             <div class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 transform transition duration-300 hover:scale-105">
                                 <img src="../media/pic_3.jpg" alt="Partner Image" class="w-full h-64 object-cover rounded-lg">
                                 <h3 class="text-lg font-semibold text-gray-800 my-2">Rohinton Fali Nariman</h3>
@@ -319,7 +365,7 @@
                             </div>
                         </div>
                         <!-- Partner Card 4 -->
-                        <div class="swiper-slide">
+                        <div class="swiper-slide flex justify-center">
                             <div class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 transform transition duration-300 hover:scale-105">
                                 <img src="../media/pic_4.jpg" alt="Partner Image" class="w-full h-64 object-cover rounded-lg">
                                 <h3 class="text-lg font-semibold text-gray-800 my-2">Indu Malhotra</h3>
@@ -331,7 +377,7 @@
                             </div>
                         </div>
                         <!-- Partner Card 5 -->
-                        <div class="swiper-slide">
+                        <div class="swiper-slide flex justify-center">
                             <div class="w-72 bg-white border border-gray-300 rounded-lg shadow-md p-4 transform transition duration-300 hover:scale-105">
                                 <img src="../media/pic_5.jpg" alt="Partner Image" class="w-full h-64 object-cover rounded-lg">
                                 <h3 class="text-lg font-semibold text-gray-800 my-2">Y. V. Chandrachud</h3>
@@ -346,113 +392,141 @@
                     </div>
                 </div>
                 <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-                <!-- Add Navigation -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+
             </div>
         </div>
-    <div class="p-4 mt-7 flex flex-col items-center">
-        <h2 class="font-medium sm:text-3xl basker mb-4">CONTACT US</h2>
-        <div class="sm:w-3/5 basker sm:text-lg lg:text-xl">
-            <form id="contactForm" class="font-light text-sm sm:text-lg lg:text-xl mb-4">
-                <div class="w-full basker flex gap-10">
-                    <div class="form-group">
-                        <label for="firstName">First Name</label>
-                        <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+    
+
+        <div class="p-4 mt-7 flex flex-col items-center">
+            <h2 class="font-medium sm:text-3xl basker mb-4">CONTACT US</h2>
+            <div class="sm:w-3/5 basker sm:text-lg lg:text-xl">
+                <form id="contactForm" class="font-light text-sm sm:text-lg lg:text-xl mb-4">
+                    <div class="w-full basker flex gap-10">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name"
+                                required>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <label for="lastName">Last Name</label>
-                        <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="queryType">Query Type</label>
+                        <select id="queryType" name="queryType" required>
+                            <option value="" disabled selected>Select a query type</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="support">Support</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+                    </div>
+                    <div class="flex justify-center">
+                        <button type="submit"
+                            class="px-8 py-2 bg-black text-white text-sm sm:text-lg font-normal border-none rounded-md cursor-pointer transition duration-300 ease-in-out hover:bg-gray-700">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer class="bg-gray-900 text-gray-400 py-6 mt-12">
+            <div class="text-center">
+                <p class="mb-4">&copy; 2024 Your Company Name. All rights reserved.</p>
+                <div class="space-x-4">
+                    <a href="#about" class="hover:text-white">About Us</a>
+                    <a href="#services" class="hover:text-white">Services</a>
+                    <a href="#contact" class="hover:text-white">Contact</a>
+                </div>
+                <p class="mt-4">Follow us on:</p>
+                <div class="space-x-4">
+                    <a href="https://www.facebook.com" class="hover:text-white">Facebook</a>
+                    <a href="https://www.twitter.com" class="hover:text-white">Twitter</a>
+                    <a href="https://www.instagram.com" class="hover:text-white">Instagram</a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Disclaimer Pop-Up -->
+
+        <div id="modal-backdrop" class="fixed inset-0 bg-black bg-opacity-50 transition-opacity"></div>
+
+    <!-- Disclaimer Modal -->
+    <div id="disclaimer-popup" class="fixed inset-0 overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div class="flex min-h-screen items-center justify-center p-4 text-center sm:p-0">
+            <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-2xl">
+                <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+                    <div class="sm:flex sm:items-start">
+                        <div class="mt-3 text-left sm:mt-0 w-full">
+                            <h2 class="text-xl font-bold leading-6 text-gray-900 mb-4" id="modal-title">
+                                DISCLAIMER
+                            </h2>
+                            <div class="space-y-4">
+                                <p class="text-gray-800">
+                                    The Bar Council of India prohibits law firms from soliciting work or advertising in any form.
+                                    By clicking 'I AGREE', the user acknowledges the following:
+                                </p>
+                                <ul class="space-y-3 list-disc pl-6 text-gray-700">
+                                    <li>
+                                        The user seeks more information about our firm, its practice areas, and attorneys solely for their own use.
+                                    </li>
+                                    <li>
+                                        This information is provided at the user's specific request, and any material obtained or downloaded
+                                        from this website is done at the user's discretion. The transmission, receipt, or use of this site
+                                        does not establish a lawyer-client relationship.
+                                    </li>
+                                    <li>
+                                        The content on this website does not constitute legal advice or opinion.
+                                    </li>
+                                </ul>
+                                <p class="text-gray-800">
+                                    Our firm is not responsible for any actions taken by the user based on the material/information provided
+                                    on this website. Users with legal issues should seek independent legal counsel.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+                    <button type="button" id="agree-button"
+                        class="inline-flex w-full justify-center rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 sm:ml-3 sm:w-auto">
+                        I Agree
+                    </button>
                 </div>
-                <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
-                </div>
-                <div class="form-group">
-                    <label for="queryType">Query Type</label>
-                    <select id="queryType" name="queryType" required>
-                        <option value="" disabled selected>Select a query type</option>
-                        <option value="general">General Inquiry</option>
-                        <option value="support">Support</option>
-                        <option value="feedback">Feedback</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Enter your message"></textarea>
-                </div>
-                <div class="flex justify-center">
-                    <button type="submit"
-                        class="px-8 py-2 bg-black text-white text-sm sm:text-lg font-normal border-none rounded-md cursor-pointer transition duration-300 ease-in-out hover:bg-gray-700">Submit</button>
-                </div>
-            </form>
-        </div>
-    </div>
-    <footer class="bg-gray-900 text-gray-400 py-6 mt-12">
-        <div class="text-center">
-            <p class="mb-4">&copy; 2024 Your Company Name. All rights reserved.</p>
-            <div class="space-x-4">
-                <a href="#about" class="hover:text-white">About Us</a>
-                <a href="#services" class="hover:text-white">Services</a>
-                <a href="#contact" class="hover:text-white">Contact</a>
-            </div>
-            <p class="mt-4">Follow us on:</p>
-            <div class="space-x-4">
-                <a href="https://www.facebook.com" class="hover:text-white">Facebook</a>
-                <a href="https://www.twitter.com" class="hover:text-white">Twitter</a>
-                <a href="https://www.instagram.com" class="hover:text-white">Instagram</a>
             </div>
         </div>
-    </footer>
-
-    <!-- Disclaimer Pop-Up -->
-
-    <div id="disclaimer-popup" class="popup p-6 space-y-6">
-        <div class="popup-content basker ">
-            <h2><b>DISCLAIMER:</b></h2>
-            <p>The Bar Council of India prohibits law firms from soliciting work or advertising in any form. By clicking
-                'I AGREE', the user acknowledges the following:</p>
-            <ul class="space-y-3 list-disc pl-6">
-                <li>The user seeks more information about our firm, its practice areas, and attorneys solely for their
-                    own use.</li>
-                <li>This information is provided at the user's specific request, and any material obtained or downloaded
-                    from this website is done at the user's discretion. The transmission, receipt, or use of this site
-                    does not establish a lawyer-client relationship.</li>
-                <li>The content on this website does not constitute legal advice or opinion.</li>
-            </ul>
-            <p>Our firm is not responsible for any actions taken by the user based on the material/information provided
-                on this website. Users with legal issues should seek independent legal counsel.</p>
-            <button class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold 
-            hover:bg-blue-700 transition-colors duration-200 
-            focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2" id="agree-button">I Agree</button>
-        </div>
     </div>
-
     <script>
-        function toggleSidebar() {
-            const sidebar = document.getElementById('sidebar');
-            sidebar.classList.toggle('-translate-x-full');
+        // Disclaimer Modal functionality
+        const modal = document.getElementById('disclaimer-popup');
+        const backdrop = document.getElementById('modal-backdrop');
+        const agreeButton = document.getElementById('agree-button');
+
+        function closeModal() {
+            modal.style.display = 'none';
+            backdrop.style.display = 'none';
         }
-    </script>
-    <script src="script.js"></script>
-    <script>
-        const heroSwiper = new Swiper('.hero-swiper', {
-            loop: true, // Optional: Enables infinite loop
-            autoplay: {
-                delay: 5000, // Autoplay delay in milliseconds
-                disableOnInteraction: false, // Keeps autoplay active after interaction
-            },
-            navigation: false,pagination: {
-                el: '.swiper-pagination',
-                clickable: false,
-            }, // No navigation arrows
+
+        agreeButton.addEventListener('click', closeModal);
+        
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
         });
+
+        // Partners Swiper functionality
         const swiper = new Swiper('.mySwiper', {
             slidesPerView: 1,
             spaceBetween: 20,
@@ -464,10 +538,6 @@
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
-            },
-            autoplay: {
-                delay: 3000, // Time in milliseconds between slide transitions
-                disableOnInteraction: false, // Continue autoplay even after user interaction
             },
             breakpoints: {
                 640: {
@@ -482,9 +552,17 @@
                     slidesPerView: 4,
                     spaceBetween: 40,
                 },
-            },
+            }
         });
     </script>
+        <script>
+            function toggleSidebar() {
+                const sidebar = document.getElementById('sidebar');
+                sidebar.classList.toggle('-translate-x-full');
+            }
+        </script>
+        <script src="script.js"></script>
+        
 </body>
 
 </html>
